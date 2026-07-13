@@ -4,137 +4,130 @@ sidebarTitle: "Troubleshooting"
 description: "Step-by-step solutions for common Flock problems: login failures, missing confirmation emails, member limits, CSV import errors, and more."
 ---
 
-Most issues in Flock have a straightforward fix. This page covers the most common problems reported by church administrators, along with step-by-step solutions. Work through the relevant section below, and if the issue persists, reach out to the support team at the bottom of this page.
+A maioria dos problemas no Flock tem uma solução direta. Esta página cobre as principais dificuldades relatadas por administradores de igreja, com soluções passo a passo. Percorra a seção correspondente e, se o problema persistir, fale com o suporte no final da página.
 
 <AccordionGroup>
+  <Accordion title="Não consigo fazer login">
+    Se você não está conseguindo entrar na sua conta do Flock, tente estes passos na ordem:
 
-  <Accordion title="I can't log in">
-    If you're unable to log in to your Flock account, try the following steps in order:
-
-    1. **Check that your email is confirmed.** Flock requires email confirmation before you can log in. If you registered recently and haven't confirmed your email, check your inbox (and spam folder) for the confirmation message from Flock. If you can't find it, use the **Resend confirmation** option — see the section below.
-
-    2. **Try resetting your password.** Click **Esqueci minha senha** on the login page and follow the instructions in the reset email. Make sure your new password meets the requirements: at least 8 characters, with uppercase letters, lowercase letters, and numbers.
-
-    3. **Check Caps Lock.** Passwords are case-sensitive. Make sure Caps Lock is not accidentally turned on.
-
-    4. **Clear your browser cookies.** Stale or corrupted session cookies can sometimes block the login flow. Clear your cookies for the Flock domain (or try opening Flock in a private/incognito window) and attempt to log in again.
-
-    5. **Try a different browser.** If the issue persists, test in a different browser to rule out a browser-specific problem.
+    1. **Verifique se seu e-mail foi confirmado.** O Flock exige confirmação do e-mail antes do primeiro login. Se você se cadastrou há pouco e ainda não confirmou, olhe a caixa de entrada (e o spam) pela mensagem de confirmação do Flock. Se não achar, use a opção **Reenviar confirmação** — veja a seção abaixo.
+    2. **Tente redefinir sua senha.** Clique em **Esqueci minha senha** na tela de login e siga as instruções do e-mail de redefinição. Certifique-se de que a nova senha atende aos requisitos: pelo menos 8 caracteres, com maiúsculas, minúsculas e números.
+    3. **Verifique o Caps Lock.** Senhas diferenciam maiúsculas de minúsculas. Confirme que o Caps Lock não está ligado por acidente.
+    4. **Limpe os cookies do navegador.** Cookies de sessão desatualizados ou corrompidos podem bloquear o fluxo de login. Limpe os cookies do domínio do Flock (ou tente abrir o Flock em uma janela anônima) e tente novamente.
+    5. **Tente outro navegador.** Se o problema persistir, teste em outro navegador para descartar um problema específico do seu.
   </Accordion>
 
-  <Accordion title="I didn't receive the confirmation email">
-    If you registered for Flock but the confirmation email hasn't arrived:
+  <Accordion title="Não recebi o e-mail de confirmação">
+    Se você se cadastrou no Flock, mas o e-mail de confirmação não chegou:
 
-    1. **Check your spam or junk folder.** Confirmation emails are sometimes filtered by email providers. Search for an email from Flock in your spam folder.
+    1. **Verifique a pasta de spam ou lixo eletrônico.** E-mails de confirmação às vezes são filtrados pelos provedores. Procure por uma mensagem do Flock no spam.
+    2. **Confira o e-mail cadastrado.** Verifique se não há erros de digitação. Se cadastrou com o e-mail errado, será necessário fazer novo cadastro com o correto.
+    3. **Use a opção Reenviar confirmação.** Depois de logado (ou pela página pós-cadastro), vá em **Configurações → Conta** e procure a opção **Reenviar confirmação**. Isso envia um novo link para o seu e-mail.
+    4. **Aguarde alguns minutos.** Ocasionalmente, a entrega de e-mails atrasa por causa das filas dos servidores de e-mail.
 
-    2. **Double-check the email address you registered with.** Make sure there are no typos in the address. If you registered with the wrong email, you'll need to register again with the correct one.
-
-    3. **Use the Resend Confirmation option.** Once you are logged in (or from the registration confirmation page), go to **Configurações → Conta** and look for the **Reenviar confirmação** option. This will send a fresh confirmation link to your email address.
-
-    4. **Wait a few minutes.** Occasionally, email delivery is delayed by a few minutes due to mail server queues.
-
-    If none of the above work, contact support with the email address you used to register.
+    Se nada funcionar, entre em contato com o suporte informando o e-mail usado no cadastro.
   </Accordion>
 
-  <Accordion title="I can't add more members">
-    If the "add member" button is disabled or you see an error when trying to create a new member, your church has reached the active member limit for your current plan.
+  <Accordion title="Não consigo adicionar mais membros">
+    Se o botão "adicionar membro" está desabilitado ou você vê um erro ao tentar criar um novo membro, sua igreja atingiu o limite de membros ativos do plano atual.
 
-    You have two options:
+    Você tem duas opções:
 
-    - **Upgrade your plan** — go to **Configurações → Plano** and select a plan with a higher member limit. Your new limit takes effect immediately after upgrading.
-    - **Deactivate members you no longer need** — if some members in your list are no longer attending, you can set their status to **Inactive**. Inactive members don't count toward your plan limit, freeing up capacity for new active members without permanently deleting any records.
+    - **Faça upgrade do plano** — vá em **Configurações → Plano** e escolha um plano com limite maior. O novo limite tem efeito imediato após o upgrade.
+    - **Desative membros que não precisa mais** — se algumas pessoas na lista não estão mais frequentando, defina o status delas como **Inativo**. Membros inativos não contam para o limite, liberando espaço para novos ativos sem excluir nenhum registro.
 
-    Your current plan and how many active members you have can always be seen on the **Configurações → Plano** page.
+    O plano atual e a quantidade de membros ativos ficam sempre visíveis na página **Configurações → Plano**.
   </Accordion>
 
-  <Accordion title="A member can't be deleted">
-    If you're trying to delete a member and the action is blocked, it's likely because that member holds a leadership role:
+  <Accordion title="Não consigo excluir um membro">
+    Se você tenta excluir um membro e a ação é bloqueada, geralmente é porque essa pessoa exerce um papel de liderança:
 
-    - **Congregation leader** — if the member is assigned as the leader of a congregation, you must first go to that congregation's settings and assign a different leader (or remove the leader field), then return to delete the member.
-    - **Group leader** — similarly, if the member leads a group, you'll need to change or remove that role before the member can be deleted.
+    - **Líder de congregação** — se o membro está atribuído como líder de uma congregação, é preciso primeiro ir nas configurações daquela congregação e definir outro líder (ou remover o campo) antes de voltar para excluir o membro.
+    - **Líder de grupo** — da mesma forma, se o membro lidera um grupo, você precisa alterar ou remover esse papel antes de excluí-lo.
 
-    Once the member no longer holds any leadership roles, the delete action will proceed normally. If you're unsure which role is blocking the deletion, check both the congregation list and the groups list for that member's name.
+    Uma vez que o membro não seja mais líder em lugar nenhum, a exclusão prossegue normalmente. Se estiver em dúvida sobre qual vínculo está bloqueando, verifique a lista de congregações e a lista de grupos pelo nome dele.
   </Accordion>
 
-  <Accordion title="A congregation can't be deleted">
-    Flock prevents you from deleting a congregation that still has **active members** assigned to it. This protects your data integrity and prevents members from being left without a congregation.
+  <Accordion title="Não consigo excluir uma congregação">
+    O Flock impede que você exclua uma congregação que ainda tem **membros ativos** vinculados. Isso protege a integridade dos dados e evita membros sem congregação.
 
-    To delete the congregation:
+    Para excluir a congregação:
 
-    1. Go to the **Membros** section and filter by the congregation you want to delete.
-    2. Reassign those members to a different congregation, or deactivate them if they are no longer attending.
-    3. Once the congregation has zero active members, return to the congregations list and delete it.
+    1. Vá em **Membros** e filtre pela congregação que deseja excluir.
+    2. Reatribua esses membros a outra congregação, ou desative aqueles que não frequentam mais.
+    3. Quando a congregação estiver com zero membros ativos, volte à lista e exclua-a.
 
-    Note: inactive members assigned to a congregation do not block deletion — only active members do.
+    Observação: membros inativos vinculados a uma congregação não bloqueiam a exclusão — apenas os ativos.
   </Accordion>
 
-  <Accordion title="The CSV import failed">
-    If your CSV import did not complete successfully, Flock's validation step will identify the specific rows and columns that contain errors. Common causes include:
+  <Accordion title="A importação por CSV falhou">
+    Se sua importação CSV não foi concluída com sucesso, a validação do Flock aponta as linhas e colunas com erro. Causas comuns:
 
-    - **Missing required field** — the `name` field is required for every row. Any row without a name will fail validation.
-    - **Invalid date format** — date fields (such as birth date, baptism date, and admission date) must be in the format `DD/MM/YYYY`. Dates in other formats (e.g., `2024-01-15` or `01/15/2024`) will be rejected.
-    - **Duplicate members** — if a row matches a member already in your system (based on name or other identifying fields), it will be flagged as a potential duplicate.
-    - **Invalid field values** — fields with fixed options (such as gender or marital status) must use the accepted values. Check the import template for the correct options.
+    - **Campo obrigatório ausente** — o campo `nome` é obrigatório em toda linha. Qualquer linha sem nome falha na validação.
+    - **Formato de data inválido** — datas (nascimento, batismo, recebimento) precisam estar no formato `DD/MM/AAAA`. Datas em outros formatos (ex.: `2024-01-15` ou `01/15/2024`) são rejeitadas.
+    - **Membros duplicados** — se uma linha coincide com um membro já no sistema (por nome ou outros campos identificadores), ela é apontada como possível duplicidade.
+    - **Valores inválidos** — campos com opções fixas (como gênero ou estado civil) precisam usar os valores aceitos. Consulte o modelo de importação para as opções corretas.
 
-    **To fix the import:**
-    1. Review the validation report shown by Flock — it lists each error with the row number and field name.
-    2. Open your CSV file, correct the flagged rows, and save.
-    3. Re-upload the corrected file and run validation again before confirming the import.
+    **Para corrigir:**
 
-    If you don't have an import template, you can use the validation step on a small test file first to confirm the expected format.
+    1. Revise o relatório de validação do Flock — ele lista cada erro com o número da linha e o campo.
+    2. Abra o CSV, corrija as linhas apontadas e salve.
+    3. Reenvie o arquivo corrigido e valide novamente antes de confirmar a importação.
+
+    Se não tiver o modelo, você pode testar a validação em um arquivo pequeno primeiro para confirmar o formato esperado.
   </Accordion>
 
-  <Accordion title="The dashboard or reports show empty charts">
-    If you open the Dashboard and see empty charts or zero counts, the most likely explanation is that you have **no active members** in your account yet.
+  <Accordion title="O painel ou os relatórios mostram gráficos vazios">
+    Se você abre o painel e vê gráficos vazios ou zeros, a causa mais provável é que ainda **não há membros ativos** na conta.
 
-    Flock's reports and charts only include **active** members. If all your members are inactive, or if you haven't added any members yet, the charts will correctly show empty or zero values — this is expected behavior and not a bug.
+    Os relatórios do Flock só incluem membros **ativos**. Se todos os seus membros estão inativos, ou você ainda não cadastrou nenhum, os gráficos exibirão corretamente valores vazios ou zero — é o comportamento esperado e não um bug.
 
-    To populate the dashboard:
-    - Add members via the **Membros → Adicionar Membro** button, or import them via CSV.
-    - Make sure the members you've added have an **Active** status.
+    Para popular o painel:
 
-    If you do have active members but the charts still appear empty, try refreshing the page. If the problem persists, contact support.
+    - Cadastre membros pelo botão **Membros → Adicionar Membro**, ou importe por CSV.
+    - Certifique-se de que os membros cadastrados tenham status **Ativo**.
+
+    Se houver membros ativos e os gráficos continuarem vazios, atualize a página. Se persistir, fale com o suporte.
   </Accordion>
 
-  <Accordion title="I forgot my password">
-    If you've forgotten your password and can't log in:
+  <Accordion title="Esqueci minha senha">
+    Se você esqueceu a senha e não consegue logar:
 
-    1. Go to the Flock login page.
-    2. Click **Esqueci minha senha** below the login form.
-    3. Enter the email address associated with your Flock account.
-    4. Click **Enviar**. You'll receive a password reset email within a few minutes.
-    5. Click the link in the email and enter a new password. The link is valid for a limited time, so use it promptly.
+    1. Vá para a tela de login do Flock.
+    2. Clique em **Esqueci minha senha** abaixo do formulário.
+    3. Informe o e-mail associado à sua conta.
+    4. Clique em **Enviar**. Você receberá um e-mail de redefinição em poucos minutos.
+    5. Clique no link do e-mail e defina uma nova senha. O link é válido por tempo limitado, então use logo.
 
-    Check your spam folder if the email doesn't arrive within a few minutes. Your new password must be at least 8 characters and include uppercase letters, lowercase letters, and numbers.
+    Confira o spam se o e-mail não chegar em alguns minutos. A nova senha precisa ter pelo menos 8 caracteres, incluindo maiúsculas, minúsculas e números.
   </Accordion>
 
-  <Accordion title="The public registration link isn't working">
-    Public registration links use a secure token in the URL. If the link you shared with your congregation isn't working, check the following:
+  <Accordion title="O link público de cadastro não está funcionando">
+    Links públicos de cadastro usam um token seguro na URL. Se o link que você compartilhou com a congregação não funciona, verifique:
 
-    - **Make sure you're sharing the full URL.** The link contains a long token after the base URL. If the URL was truncated (e.g., by a messaging app wrapping long links), copy the link directly from Flock and share it again.
-    - **Check if the link was deactivated.** If someone with Admin or Owner access recently deactivated the registration link and created a new one in the integration settings, the old link will no longer be valid. Go back to Flock's integration settings to get the current active link and share the new one with your congregation.
-    - **Test the link in a private browser window** to rule out a local cache or cookie issue.
+    - **Compartilhe a URL completa.** O link contém um token longo após a URL base. Se a URL foi truncada (por exemplo, um app de mensagens quebrou o link), copie o link direto do Flock e envie de novo.
+    - **Veja se o link foi desativado.** Se alguém com acesso de Administrador ou Proprietário desativou recentemente o link e criou um novo, o antigo deixou de ser válido. Volte às configurações de integração do Flock para pegar o link ativo e compartilhe o novo com sua congregação.
+    - **Teste o link em uma janela anônima** para descartar problemas de cache ou cookies locais.
 
-    If the link still doesn't work after these checks, contact support with the link you're trying to use.
+    Se ainda não funcionar após essas verificações, envie ao suporte o link que está tentando usar.
   </Accordion>
 
-  <Accordion title="My session keeps expiring">
-    Flock uses an automatic session renewal system, so under normal circumstances you should stay logged in for extended periods.
+  <Accordion title="Minha sessão expira toda hora">
+    O Flock usa renovação automática de sessão, então em condições normais você fica logado por longos períodos.
 
-    If you're being logged out frequently or unexpectedly:
+    Se você está sendo deslogado com frequência ou de forma inesperada:
 
-    1. **Clear your browser cookies** for the Flock domain. Corrupted or conflicting cookies from a previous session can cause authentication issues.
-    2. **Log in again** after clearing cookies.
-    3. **Avoid using browser extensions** that aggressively clear cookies or block storage (such as some privacy or ad-blocking extensions), as these can interfere with session management.
-    4. **Check your browser's cookie settings** — make sure cookies are not set to be deleted when the browser closes, or that the Flock domain is on an exceptions list.
+    1. **Limpe os cookies do navegador** para o domínio do Flock. Cookies corrompidos ou em conflito de uma sessão anterior podem causar problemas de autenticação.
+    2. **Faça login novamente** depois de limpar os cookies.
+    3. **Evite extensões do navegador** que limpam cookies agressivamente ou bloqueiam armazenamento (algumas extensões de privacidade ou bloqueadores de anúncios), pois podem interferir na gestão de sessão.
+    4. **Verifique as configurações de cookies do navegador** — certifique-se de que os cookies não estão configurados para serem apagados ao fechar o navegador, ou que o domínio do Flock esteja na lista de exceções.
 
-    If you're accessing Flock on multiple devices simultaneously, signing out of one device does not sign out the others. If the problem continues after the above steps, contact support.
+    Se você acessa o Flock em vários dispositivos simultaneamente, sair de um não desconecta os outros. Se o problema continuar após esses passos, fale com o suporte.
   </Accordion>
-
 </AccordionGroup>
 
 ---
 
-## Need more help?
+## Precisa de mais ajuda?
 
-If you've worked through the troubleshooting steps above and the issue is still not resolved, our support team is ready to assist. Reach out with a description of the problem, the steps you've already tried, and (if applicable) any error messages you're seeing.
+Se você seguiu os passos acima e o problema não foi resolvido, nossa equipe de suporte está pronta para ajudar. Envie uma descrição do problema, os passos já tentados e (se aplicável) mensagens de erro que apareceram.

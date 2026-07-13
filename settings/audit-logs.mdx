@@ -4,65 +4,66 @@ sidebarTitle: "Audit Logs"
 description: "Review a full history of every important action performed in your Flock church account — who made changes, what changed, and when it happened."
 ---
 
-Audit logs give you a complete, tamper-proof record of every important action performed in your Flock account. Any time a member is created or deleted, a congregation is edited, a user role changes, or any other significant operation occurs, Flock automatically creates a log entry. This gives church leadership full visibility and accountability over how the system is being used — and by whom.
+Os logs de auditoria dão a você um registro completo e à prova de alteração de todas as ações importantes realizadas na sua conta do Flock. Sempre que um membro é criado ou excluído, uma congregação é editada, o papel de um usuário muda, ou qualquer outra operação relevante ocorre, o Flock cria automaticamente uma entrada de log. Isso dá total visibilidade e responsabilidade à liderança sobre como o sistema é utilizado — e por quem.
 
-## Who Can View Audit Logs
+## Quem pode ver os logs
 
-Only users with the **Owner** or **Admin** role can access audit logs. Editor and Reader users do not have access to this section.
+Apenas usuários com o papel de **Proprietário** ou **Administrador** têm acesso aos logs de auditoria. Editores e Leitores não têm acesso a esta seção.
 
-## Accessing Audit Logs
+## Acessando os logs
 
-Navigate to **Configurações** in the sidebar, then click the **Logs** tab at the top of the Settings page.
+Vá em **Configurações** na barra lateral e clique na aba **Logs** no topo da página de Configurações.
 
-## What Is Logged
+## O que é registrado
 
-Flock records log entries for all of the following operations:
+O Flock registra entradas de log para todas as operações a seguir:
 
-| Entity | Logged Actions |
-|---|---|
-| **Members** | Created, updated (including field-level changes), activated, deactivated, deleted |
-| **Integrantes** | Created, updated, deleted, converted to member |
-| **Congregations** | Created, updated, deleted |
-| **Groups** | Created, updated, deleted |
-| **Calendar Events** | Created, updated, deleted |
-| **Church Profile** | Updated (name, CNPJ, address, contacts) |
-| **Account** | Email changed, password changed, account deleted |
+| Entidade | Ações registradas |
+| --- | --- |
+| **Membros** | Criados, atualizados (incluindo mudanças em nível de campo), ativados, desativados, excluídos |
+| **Integrantes** | Criados, atualizados, excluídos, convertidos em membro |
+| **Congregações** | Criadas, atualizadas, excluídas |
+| **Grupos** | Criados, atualizados, excluídos |
+| **Eventos do calendário** | Criados, atualizados, excluídos |
+| **Perfil da igreja** | Atualizado (nome, CNPJ, endereço, contatos) |
+| **Conta** | E-mail alterado, senha alterada, conta excluída |
 
-## What Each Log Entry Shows
+## O que cada entrada mostra
 
-Every log entry in Flock contains the following information:
+Toda entrada de log no Flock contém:
 
-- **Entity type** — What was affected (e.g., Member, Congregation, Church)
-- **Action** — What happened (Created, Updated, Activated, Deactivated, Deleted)
-- **Record name** — The name or identifier of the affected record
-- **Timestamp** — The exact date and time the action was performed (displayed in Brazilian date/time format)
-- **Before & after values** — For update actions, Flock shows exactly which fields changed and what the old and new values were
+- **Tipo de entidade** — o que foi afetado (ex.: Membro, Congregação, Igreja)
+- **Ação** — o que aconteceu (Criação, Atualização, Ativação, Desativação, Exclusão)
+- **Nome do registro** — nome ou identificador do registro afetado
+- **Data e hora** — momento exato em que a ação foi realizada (no formato brasileiro)
+- **Valores antes e depois** — para atualizações, o Flock mostra exatamente quais campos mudaram, com os valores antigos e novos
 
-Click **Ver detalhes** on any log entry to expand it and see the full before/after comparison.
+Clique em **Ver detalhes** em qualquer entrada para expandir e ver a comparação completa.
 
-## Filtering Logs
+## Filtrando os logs
 
-You can narrow down the log history using the filter controls at the top of the Logs page:
+Você pode restringir o histórico usando os filtros no topo da página de Logs:
 
 <CardGroup cols={2}>
-  <Card title="Filter by Entity" icon="layer-group">
-    Show only logs for a specific area of the system: Members, Church, Account, Congregations, Groups, Calendar, or Integração.
+  <Card title="Filtrar por entidade" icon="layer-group">
+    Mostrar apenas logs de uma área do sistema: Membros, Igreja, Conta, Congregações, Grupos, Calendário ou Integração.
   </Card>
-  <Card title="Filter by Action" icon="sliders">
-    Show only a specific type of action: Criação (create), Atualização (update), Ativação (activate), Inativação (deactivate), or Exclusão (delete).
+
+  <Card title="Filtrar por ação" icon="sliders">
+    Mostrar apenas um tipo de ação: Criação, Atualização, Ativação, Inativação ou Exclusão.
   </Card>
 </CardGroup>
 
-To reset to the full log view, set both filters back to "Todas" (all).
+Para voltar à visão completa, defina os dois filtros como "Todas".
 
-## Pagination
+## Paginação
 
-Audit logs are paginated — by default, 10 entries are shown per page. Use the **Anterior** and **Próximo** buttons at the bottom of the log list to navigate through older records. The page indicator shows your current position (e.g., "Página 2 de 14") and the total number of entries matching your current filter.
+Os logs são paginados — por padrão, 10 entradas por página. Use os botões **Anterior** e **Próximo** no fim da lista para navegar por registros mais antigos. O indicador mostra sua posição atual (por exemplo, "Página 2 de 14") e o total de entradas que correspondem ao filtro atual.
 
 <Tip>
-  Review your audit logs periodically — for example, once a week — to confirm that only authorized changes are being made to your member records and church data. This is especially useful if multiple staff members have Editor or Admin access.
+  Revise seus logs de auditoria periodicamente — por exemplo, uma vez por semana — para confirmar que só alterações autorizadas estão sendo feitas nos registros da igreja. Isso é especialmente útil se vários colaboradores têm acesso de Editor ou Administrador.
 </Tip>
 
 <Note>
-  Audit log entries **cannot be edited or deleted** — not even by the Owner. This ensures the integrity of your activity history and provides a reliable trail for accountability purposes.
+  Entradas de log **não podem ser editadas nem excluídas** — nem mesmo pelo Proprietário. Isso garante a integridade do histórico de atividades e oferece uma trilha confiável de auditoria.
 </Note>

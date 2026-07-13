@@ -11,10 +11,10 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Documentação",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Começar",
             "pages": [
               "introduction",
               "quickstart",
@@ -22,7 +22,7 @@
             ]
           },
           {
-            "group": "Core Features",
+            "group": "Recursos principais",
             "pages": [
               "features/members",
               "features/integration",
@@ -33,7 +33,7 @@
             ]
           },
           {
-            "group": "Using the App",
+            "group": "Usando o app",
             "pages": [
               "guides/adding-members",
               "guides/managing-integration",
@@ -42,7 +42,7 @@
             ]
           },
           {
-            "group": "Account & Settings",
+            "group": "Conta e configurações",
             "pages": [
               "settings/church-profile",
               "settings/team-roles",
@@ -51,7 +51,7 @@
             ]
           },
           {
-            "group": "Help",
+            "group": "Ajuda",
             "pages": [
               "faq",
               "troubleshooting"
