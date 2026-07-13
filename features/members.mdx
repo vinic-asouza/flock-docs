@@ -4,138 +4,141 @@ sidebarTitle: "Members"
 description: "Add, edit, filter, and export member records. Manage active and inactive members, run advanced searches, and view monthly birthday lists."
 ---
 
-The Members module is the heart of Flock — it's where you store, search, and maintain records for every person in your church family. From basic contact details to baptism history, congregation assignment, and occupation, each member profile gives you a complete, living picture of your congregation. Everything you enter here feeds directly into reports, group rosters, calendar events, and the integration pipeline.
+O módulo Membros é o coração do Flock — é onde você armazena, pesquisa e mantém os registros de cada pessoa da sua família da igreja. De dados básicos de contato a histórico de batismo, congregação e ocupação, cada perfil de membro dá uma visão completa e viva da sua congregação. Tudo que você insere aqui alimenta relatórios, listas de grupos, eventos do calendário e o funil de integração.
 
-## Member records
+## Registros de membros
 
-Each member profile holds a rich set of information organized into logical sections:
+Cada perfil de membro reúne um conjunto rico de informações organizado em seções lógicas:
 
 <CardGroup cols={2}>
-  <Card title="Personal info" icon="user">
-    Full name, date of birth, gender, nationality, marital status, and spouse name.
+  <Card title="Dados pessoais" icon="user">
+    Nome completo, data de nascimento, gênero, nacionalidade, estado civil e nome do cônjuge.
   </Card>
-  <Card title="Contact details" icon="address-book">
-    Email address, phone number, and WhatsApp number.
+
+  <Card title="Contato" icon="address-book">
+    E-mail, telefone e WhatsApp.
   </Card>
-  <Card title="Address" icon="location-dot">
-    Street, neighbourhood, city, state, and postal code. The form auto-fills address fields when you type a valid CEP.
+
+  <Card title="Endereço" icon="location-dot">
+    Rua, bairro, cidade, estado e CEP. O formulário preenche o endereço automaticamente quando você digita um CEP válido.
   </Card>
-  <Card title="Church details" icon="church">
-    Congregation, role (cargo), admission date, baptism date, and occupation.
+
+  <Card title="Dados eclesiásticos" icon="church">
+    Congregação, cargo, data de recebimento, data de batismo e ocupação.
   </Card>
 </CardGroup>
 
-## Search & filters
+## Busca e filtros
 
-You can locate any member in seconds using text search and a layered filter system.
+Você localiza qualquer membro em segundos com busca por texto e um sistema de filtros em camadas.
 
-**Text search** matches across name, email, phone, WhatsApp, spouse name, and document number simultaneously — type any fragment and Flock narrows the list in real time.
+A **busca por texto** cruza nome, e-mail, telefone, WhatsApp, nome do cônjuge e número de documento simultaneamente — digite qualquer trecho e o Flock filtra a lista em tempo real.
 
-**Basic filters** let you slice by:
-- **Status** — active, inactive, or all
-- **Congregation** — any congregation registered under your church
-- **Role (cargo)** — filter by a specific ministry role
+Os **filtros básicos** permitem segmentar por:
 
-**Advanced filters** give you even finer control:
+- **Status** — ativo, inativo ou todos
+- **Congregação** — qualquer congregação cadastrada na sua igreja
+- **Cargo** — filtre por um cargo ministerial específico
 
-<Accordion title="All available advanced filters">
+Os **filtros avançados** dão ainda mais controle:
 
-| Filter | Options |
-|---|---|
-| Gender | Masculino / Feminino |
-| Marital status | Solteiro, Casado, Divorciado, Viúvo, Outro |
-| Nationality | Any text value |
-| State | Brazilian state (via IBGE) |
-| City | City within selected state |
-| Neighbourhood | Free text |
-| Age range | Minimum and maximum age |
-| Occupation | Free text |
-| Birth date range | From / to |
-| Baptism date range | From / to |
-| Admission date range | From / to |
-
+<Accordion title="Todos os filtros avançados disponíveis">
+  | Filtro | Opções |
+  | --- | --- |
+  | Gênero | Masculino / Feminino |
+  | Estado civil | Solteiro, Casado, Divorciado, Viúvo, Outro |
+  | Nacionalidade | Qualquer texto |
+  | Estado | UF brasileira (via IBGE) |
+  | Cidade | Cidade dentro do estado selecionado |
+  | Bairro | Texto livre |
+  | Faixa etária | Idade mínima e máxima |
+  | Ocupação | Texto livre |
+  | Data de nascimento (intervalo) | De / até |
+  | Data de batismo (intervalo) | De / até |
+  | Data de recebimento (intervalo) | De / até |
 </Accordion>
 
-Active filters appear as chips at the top of the list. Click the **×** on any chip to remove that filter without resetting the others.
+Os filtros ativos aparecem como chips no topo da lista. Clique no **×** de qualquer chip para remover aquele filtro sem afetar os demais.
 
-You can also **sort** by any column — name, admission date, baptism date, and more — in ascending or descending order.
+Você também pode **ordenar** por qualquer coluna — nome, data de recebimento, data de batismo e mais — em ordem crescente ou decrescente.
 
-## List vs Grid view
+## Visualização em lista vs. grade
 
-The member list supports two display modes:
+A lista de membros suporta dois modos de exibição:
 
-- **List view** — a compact table showing name, contact, congregation, and status in rows. Best for scanning large lists and comparing records side by side.
-- **Grid view** — a card-based layout that shows each member as a visual card with their photo placeholder, name, and key details. Best for a more personal, at-a-glance overview.
+- **Lista** — uma tabela compacta mostrando nome, contato, congregação e status em linhas. Ideal para examinar listas grandes e comparar registros lado a lado.
+- **Grade** — um layout em cartões mostrando cada membro como um card visual com espaço para foto, nome e principais dados. Ideal para uma visão mais pessoal e imediata.
 
-Toggle between modes using the icons in the top-right of the member list. Flock remembers your preferred mode the next time you visit.
+Alterne entre os modos usando os ícones no canto superior direito da lista. O Flock lembra sua preferência na próxima visita.
 
-## Active and inactive members
+## Membros ativos e inativos
 
-Flock distinguishes between **active** and **inactive** members so your historical records are never lost:
+O Flock distingue entre membros **ativos** e **inativos** para que seu histórico nunca se perca:
 
-- **Active members** appear in all default lists, reports, and analytics.
-- **Inactive members** remain in the system with their full history intact, but they are hidden from default filters and do not count in standard demographic reports.
+- **Membros ativos** aparecem em todas as listas, relatórios e análises padrão.
+- **Membros inativos** permanecem no sistema com o histórico completo, mas ficam ocultos dos filtros padrão e não entram em relatórios demográficos.
 
-To change a member's status, open their profile and choose **Deactivar** or **Reativar**. Confirm the action in the dialog that appears. The status change takes effect immediately.
+Para alterar o status, abra o perfil e escolha **Desativar** ou **Reativar**. Confirme no diálogo. A mudança tem efeito imediato.
 
 <Note>
-  Deactivating a member does **not** delete their record. All their data — baptism dates, addresses, group memberships — is preserved and accessible if you filter by "Inactive" or "All."
+  Desativar um membro **não** exclui o registro. Todos os dados — datas de batismo, endereços, participações em grupos — são preservados e acessíveis se você filtrar por "Inativo" ou "Todos".
 </Note>
 
-## Batch operations
+## Operações em lote
 
-If you need to register several new members at once — for example, after a membership class — use the **batch creation** feature. Click the batch icon next to the main "Add member" button, fill in each record in the multi-row form, and save all records in a single operation.
+Se precisar cadastrar vários membros novos de uma vez — por exemplo, após uma classe de recepção — use o recurso de **criação em lote**. Clique no ícone de lote ao lado do botão principal "Adicionar membro", preencha cada registro no formulário de múltiplas linhas e salve tudo em uma única operação.
 
-## CSV import
+## Importação por CSV
 
-For larger migrations, Flock lets you import members from a CSV file:
+Para migrações maiores, o Flock permite importar membros a partir de um arquivo CSV:
 
 <Steps>
-  <Step title="Prepare your CSV">
-    Format your spreadsheet using the column order expected by Flock. Download the template from the import dialog if you need a starting point.
+  <Step title="Prepare seu CSV">
+    Formate sua planilha com a ordem de colunas esperada pelo Flock. Baixe o modelo do diálogo de importação se precisar de um ponto de partida.
   </Step>
-  <Step title="Upload and validate">
-    Click the import icon (upload arrow) in the Members header. Select your `.csv` file (maximum 10 MB). Flock validates the file and shows a preview with any errors highlighted.
+  <Step title="Envie e valide">
+    Clique no ícone de importação (seta para cima) no cabeçalho de Membros. Selecione seu arquivo `.csv` (máximo 10 MB). O Flock valida o arquivo e mostra uma prévia com quaisquer erros destacados.
   </Step>
-  <Step title="Fix errors">
-    Correct any flagged rows in your spreadsheet, re-upload, and validate again until no errors remain.
+  <Step title="Corrija os erros">
+    Corrija as linhas apontadas na sua planilha, faça novo upload e valide novamente até que não haja erros.
   </Step>
-  <Step title="Confirm the import">
-    Click **Importar** to process the file. Flock shows a summary of how many records were created successfully.
+  <Step title="Confirme a importação">
+    Clique em **Importar** para processar o arquivo. O Flock exibe um resumo de quantos registros foram criados com sucesso.
   </Step>
 </Steps>
 
 <Note>
-  The import respects your plan's member limit. If the file would push you over your limit, the import is blocked and you'll see a message telling you how many slots are available.
+  A importação respeita o limite de membros do seu plano. Se o arquivo ultrapassar o limite, a importação é bloqueada e você verá uma mensagem indicando quantos slots estão disponíveis.
 </Note>
 
-## Birthday list
+## Lista de aniversariantes
 
-The Members module includes a dedicated birthday view so you never miss celebrating a church family member. Navigate to the **Aniversariantes** section to see all members whose birthday falls in the current month, along with their contact details so you can send a message or call directly.
+O módulo Membros inclui uma visualização dedicada de aniversariantes para que você nunca deixe de celebrar alguém da família da igreja. Acesse a seção **Aniversariantes** para ver todos os membros que fazem aniversário no mês atual, com dados de contato para mandar uma mensagem ou ligar.
 
 <Tip>
-  The Calendar module also displays a birthday counter at the top of the monthly view. Click it to open the same birthday list without leaving your calendar.
+  O módulo Calendário também exibe um contador de aniversariantes no topo da visão mensal. Clique nele para abrir a mesma lista sem sair do calendário.
 </Tip>
 
-## PDF export
+## Exportação em PDF
 
-You can export member data as PDF in two ways:
+Você pode exportar os dados de membros em PDF de duas formas:
 
 <CardGroup cols={2}>
-  <Card title="Individual member profile" icon="file-pdf" href="#">
-    Open a member's detail view and click **Exportar PDF** to download a formatted document with their full profile.
+  <Card title="Perfil individual do membro" icon="file-pdf" href="#">
+    Abra o detalhe de um membro e clique em **Exportar PDF** para baixar um documento formatado com o perfil completo.
   </Card>
-  <Card title="Filtered member list" icon="file-lines" href="#">
-    Apply any combination of filters, then open the export menu and click **Exportar lista (PDF)**. Choose which fields to include before downloading.
+
+  <Card title="Lista filtrada de membros" icon="file-lines" href="#">
+    Aplique a combinação de filtros que quiser, abra o menu de exportação e clique em **Exportar lista (PDF)**. Escolha quais campos incluir antes de baixar.
   </Card>
 </CardGroup>
 
-Field selection lets you control exactly what appears in the exported list — you can include or exclude contact details, dates, congregation, role, and address fields to match your use case (sharing with elders, printing a directory, etc.).
+A seleção de campos permite controlar exatamente o que aparece na lista exportada — você inclui ou exclui contato, datas, congregação, cargo e endereço conforme o uso (compartilhar com os presbíteros, imprimir um diretório, etc.).
 
-A CSV export of the filtered list is also available from the same export menu.
+Uma exportação em CSV da lista filtrada também está disponível no mesmo menu.
 
-## Member limit
+## Limite de membros
 
 <Note>
-  Your subscription plan defines the maximum number of **active** members you can have at one time. The current count and your plan's limit are displayed in the app header so you always know where you stand. Inactive members do **not** count against your limit. Contact us to upgrade your plan if you need more capacity.
+  Seu plano de assinatura define a quantidade máxima de membros **ativos** que você pode ter ao mesmo tempo. A contagem atual e o limite do plano são exibidos no cabeçalho para que você sempre saiba onde está. Membros inativos **não** contam para o limite. Fale conosco para fazer upgrade se precisar de mais capacidade.
 </Note>

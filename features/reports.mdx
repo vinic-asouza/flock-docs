@@ -4,124 +4,132 @@ sidebarTitle: "Reports"
 description: "Explore your church's demographics, membership trends, congregation structure, and temporal analytics with Flock's built-in dashboard."
 ---
 
-The Analytics Dashboard gives you a full, living picture of your church's membership — who your people are, where they live, how your congregation has grown over time, and how members are distributed across your ministries and locations. Every chart and card pulls from your active member data in real time, so you're always looking at an up-to-date snapshot. Use the dashboard to prepare reports for leadership meetings, spot gaps in your pastoral care, or simply stay informed about the health of your church family.
+O painel de análises oferece uma visão completa e viva da membresia da sua igreja — quem são suas pessoas, onde moram, como sua congregação cresceu ao longo do tempo e como os membros se distribuem entre ministérios e locais. Cada gráfico e cartão puxa dos seus dados de membros ativos em tempo real, então você sempre olha para um retrato atualizado. Use o painel para preparar relatórios de liderança, identificar lacunas no cuidado pastoral ou simplesmente ficar informado sobre a saúde da sua família da igreja.
 
 <Note>
-  Most charts and demographic breakdowns reflect **active members** only. The summary cards at the top of the dashboard show both active and inactive counts so you always have the full picture.
+  A maioria dos gráficos e recortes demográficos reflete apenas **membros ativos**. Os cartões-resumo no topo do painel mostram contagens de ativos e inativos para que você tenha o quadro completo.
 </Note>
 
-## Summary cards
+## Cartões-resumo
 
-At the top of the dashboard, six summary cards give you your most important numbers at a glance:
+No topo do painel, seis cartões-resumo trazem os números mais importantes em um piscar de olhos:
 
 <CardGroup cols={3}>
-  <Card title="Total members" icon="users" href="#">
-    The total number of member records in scope (active + inactive combined).
+  <Card title="Total de membros" icon="users" href="#">
+    O total de registros de membros no escopo (ativos \+ inativos somados).
   </Card>
-  <Card title="Active members" icon="user-check" href="#">
-    Members currently marked as active.
+
+  <Card title="Membros ativos" icon="user-check" href="#">
+    Membros atualmente marcados como ativos.
   </Card>
-  <Card title="Inactive members" icon="user-xmark" href="#">
-    Members currently marked as inactive.
+
+  <Card title="Membros inativos" icon="user-xmark" href="#">
+    Membros atualmente marcados como inativos.
   </Card>
-  <Card title="% active" icon="chart-pie" href="#">
-    The percentage of your total membership that is currently active.
+
+  <Card title="% de ativos" icon="chart-pie" href="#">
+    O percentual da membresia total que está atualmente ativa.
   </Card>
-  <Card title="New members (30 days)" icon="user-plus" href="#">
-    Members whose admission date falls within the last 30 days.
+
+  <Card title="Novos membros (30 dias)" icon="user-plus" href="#">
+    Membros cuja data de recebimento está nos últimos 30 dias.
   </Card>
-  <Card title="Baptisms (30 days)" icon="droplet" href="#">
-    Members whose baptism date falls within the last 30 days.
+
+  <Card title="Batismos (30 dias)" icon="droplet" href="#">
+    Membros cuja data de batismo está nos últimos 30 dias.
   </Card>
 </CardGroup>
 
-## Filter by congregation
+## Filtro por congregação
 
-The dashboard supports a powerful scope filter at the top of the page:
+O painel suporta um filtro de escopo poderoso no topo da página:
 
-- **Todas** — shows data across your entire church, all congregations combined
-- **Sede** — shows data for your main headquarters congregation only
-- **Congregação específica** — select any individual branch to see its isolated analytics
+- **Todas** — mostra dados de toda a igreja, todas as congregações combinadas
+- **Sede** — mostra dados apenas da sua congregação principal
+- **Congregação específica** — selecione qualquer filial para ver as análises isoladas
 
-All charts, cards, and tables update instantly when you change the congregation scope. The PDF export also respects the active filter, so you can generate a report specific to one location.
+Todos os gráficos, cartões e tabelas se atualizam instantaneamente quando você troca o escopo. A exportação em PDF também respeita o filtro ativo, permitindo gerar um relatório específico de um local.
 
 <Note>
-  If you select "Congregação" mode but do not choose a specific congregation, the PDF export will be blocked until you make a selection.
+  Se você selecionar o modo "Congregação" mas não escolher uma congregação específica, a exportação em PDF ficará bloqueada até que uma seleção seja feita.
 </Note>
 
-## Demographics
+## Demografia
 
-The Demographics section shows you the human makeup of your congregation through interactive charts and tables.
+A seção de Demografia mostra a composição humana da sua congregação por meio de gráficos e tabelas interativos.
 
-<Accordion title="Gender distribution">
-  A **pie chart** and a **bar chart** showing the split between male (Masculino) and female (Feminino) members. The charts display both absolute counts and percentages.
+<Accordion title="Distribuição por gênero">
+  Um **gráfico de pizza** e um **gráfico de barras** mostrando a divisão entre membros do gênero masculino e feminino. Os gráficos exibem contagens absolutas e percentuais.
 </Accordion>
 
-<Accordion title="Marital status distribution">
-  A breakdown of your membership by marital status: Solteiro, Casado, Divorciado, Viúvo, and Outro. Displayed as a pie chart with a data table alongside it.
+<Accordion title="Distribuição por estado civil">
+  Um recorte da membresia por estado civil: Solteiro, Casado, Divorciado, Viúvo e Outro. Exibido como um gráfico de pizza com uma tabela ao lado.
 </Accordion>
 
-<Accordion title="Age groups">
-  Members are grouped into seven age bands:
+<Accordion title="Faixas etárias">
+  Os membros são agrupados em sete faixas etárias:
 
-  | Age band | Label |
-  |---|---|
-  | 0 – 12 | Children |
-  | 13 – 17 | Teenagers |
-  | 18 – 25 | Young adults |
-  | 26 – 35 | Adults |
-  | 36 – 50 | Mid-life adults |
-  | 51 – 65 | Seniors |
-  | 65+ | Older seniors |
+  | Faixa | Rótulo |
+  | --- | --- |
+  | 0 – 12 | Crianças |
+  | 13 – 17 | Adolescentes |
+  | 18 – 25 | Jovens adultos |
+  | 26 – 35 | Adultos |
+  | 36 – 50 | Adultos de meia-idade |
+  | 51 – 65 | Idosos |
+  | 65\+ | Idosos avançados |
 
-  Age is calculated from the date of birth on each member's profile.
+  A idade é calculada a partir da data de nascimento no perfil de cada membro.
 </Accordion>
 
-<Accordion title="Geographic distribution">
-  A breakdown of your members by **state** (UF) and by **city**, showing where your congregation lives. Useful for understanding commute distances, identifying underserved neighbourhoods, and planning outreach.
+<Accordion title="Distribuição geográfica">
+  Um recorte dos seus membros por **estado** (UF) e por **cidade**, mostrando onde sua congregação mora. Útil para entender distâncias de deslocamento, identificar bairros pouco atendidos e planejar ações evangelísticas.
 </Accordion>
 
-<Accordion title="Top 10 occupations">
-  A ranked table of the ten most common occupations declared across your active members. Useful for understanding the professional makeup of your congregation.
+<Accordion title="Top 10 de ocupações">
+  Uma tabela com as dez ocupações mais comuns declaradas pelos seus membros ativos. Útil para entender a composição profissional da sua congregação.
 </Accordion>
 
-## Church structure
+## Estrutura da igreja
 
-The Church Structure section shows how your members are organized internally.
+A seção de Estrutura da Igreja mostra como seus membros estão organizados internamente.
 
-<Accordion title="Distribution by roles (cargos)">
-  A visual breakdown — pie chart and bar chart — of how many members hold each role (cargo). Examples: Diácono, Presbítero, Pastor, Membro, etc. This reflects the roles you've defined and assigned in the Members module.
+<Accordion title="Distribuição por cargos">
+  Um recorte visual — gráfico de pizza e gráfico de barras — de quantos membros ocupam cada cargo. Exemplos: Diácono, Presbítero, Pastor, Membro, etc. Reflete os cargos definidos e atribuídos no módulo Membros.
 </Accordion>
 
-<Accordion title="Distribution by congregation">
-  A chart showing the active member count for each congregation, letting you compare the size of your sites at a glance.
+<Accordion title="Distribuição por congregação">
+  Um gráfico mostrando a contagem de membros ativos em cada congregação, permitindo comparar o tamanho das suas unidades num relance.
 </Accordion>
 
-## Temporal analysis
+## Análise temporal
 
-The Temporal Analysis section answers the question: *how has your church grown over time?* All charts in this section are **line charts** that show trends across years and months.
+A seção de Análise Temporal responde à pergunta: _como sua igreja cresceu ao longo do tempo?_ Todos os gráficos desta seção são **gráficos de linha** que mostram tendências entre anos e meses.
 
 <CardGroup cols={2}>
-  <Card title="Baptisms per year" icon="chart-line" href="#">
-    A line chart showing the number of baptisms recorded each calendar year, based on baptism dates in member profiles.
+  <Card title="Batismos por ano" icon="chart-line" href="#">
+    Um gráfico de linha mostrando o número de batismos registrados a cada ano civil, com base nas datas de batismo dos perfis.
   </Card>
-  <Card title="Baptisms per month" icon="chart-line" href="#">
-    A monthly view of baptisms within the current or selected year.
+
+  <Card title="Batismos por mês" icon="chart-line" href="#">
+    Uma visão mensal dos batismos dentro do ano atual ou selecionado.
   </Card>
-  <Card title="Admissions per year" icon="chart-line" href="#">
-    Annual admission (recebimento) counts showing the pace of new member reception over time.
+
+  <Card title="Recebimentos por ano" icon="chart-line" href="#">
+    Contagem anual de recebimentos mostrando o ritmo de entrada de novos membros ao longo do tempo.
   </Card>
-  <Card title="Admissions per month" icon="chart-line" href="#">
-    A monthly breakdown of admissions for more granular trend analysis.
+
+  <Card title="Recebimentos por mês" icon="chart-line" href="#">
+    Um recorte mensal de recebimentos para uma análise de tendência mais granular.
   </Card>
 </CardGroup>
 
-In addition to member trends, the dashboard also shows the **integration timeline** — how many people entered and completed (or were discarded from) the integration pipeline over time.
+Além das tendências de membros, o painel também mostra a **linha do tempo da integração** — quantas pessoas entraram e concluíram (ou foram descartadas do) funil de integração ao longo do tempo.
 
-## Exporting the dashboard
+## Exportando o painel
 
-Click **Exportar PDF** in the dashboard header to download a full PDF snapshot of the current dashboard view. The export captures all visible cards, charts, and tables in the scope of your active congregation filter.
+Clique em **Exportar PDF** no cabeçalho do painel para baixar um retrato em PDF da visão atual. A exportação captura todos os cartões, gráficos e tabelas visíveis, dentro do escopo do filtro de congregação ativo.
 
 <Tip>
-  For a congregation-level report, select the specific congregation from the filter before clicking Export. The PDF will be scoped exclusively to that congregation's data, making it suitable to share with that site's leadership team.
+  Para um relatório em nível de congregação, selecione a congregação específica no filtro antes de clicar em Exportar. O PDF será restrito exclusivamente aos dados daquela congregação, ideal para compartilhar com a liderança daquela unidade.
 </Tip>
