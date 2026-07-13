@@ -1,7 +1,7 @@
 ---
-title: "Frequently Asked Questions About Flock"
+title: "Frequently Asked Questions About Flock Church Management"
 sidebarTitle: "FAQ"
-description: "Answers to common questions about Flock's features, pricing, data security, member limits, and account management."
+description: "Answers to common questions about Flock — features, pricing, data security, member limits, multi-user access, and account management for churches."
 ---
 
 Here you'll find answers to the most common questions church administrators ask about Flock. If your question isn't covered here, check the relevant section of the documentation or contact our support team at the bottom of this page.
@@ -67,10 +67,10 @@ Here you'll find answers to the most common questions church administrators ask 
     Yes. Flock is built with data security as a core principle:
 
     - **Complete data isolation** — each church's data is fully separated from every other church in the system. There is no way for one church to access another church's records.
-    - **Row-Level Security** — enforced at the database level via Supabase, so even a misconfigured request cannot return another church's data.
+    - **Database-level access controls** — access rules are enforced at the database layer, so even an unexpected request cannot return another church's data.
     - **Encrypted connections** — all communication between your browser and Flock's servers uses HTTPS/TLS encryption.
-    - **Secure authentication** — Flock uses industry-standard JWT-based authentication with HttpOnly cookies to protect against XSS attacks, plus automatic session renewal.
-    - **Rate limiting** — login attempts and sensitive operations are rate-limited to protect against brute-force attacks.
+    - **Secure authentication** — Flock uses industry-standard secure authentication with automatic session renewal and protection against common web attacks.
+    - **Rate limiting** — login attempts and sensitive operations are rate-limited to protect against brute-force attacks. For example, login is limited to 10 attempts per 15 minutes, and password recovery to 5 attempts per hour.
   </Accordion>
 
   <Accordion title="How do I export my data?">
@@ -106,9 +106,12 @@ Here you'll find answers to the most common questions church administrators ask 
   </Accordion>
 
   <Accordion title="Can visitors register themselves?">
-    Yes. Flock provides **public registration links** that you can share with your congregation or post on social media. When someone fills out the public registration form using your link, they are added to Flock as an **integrante** (a person in the onboarding/integration process) rather than immediately as a full member.
+    Yes. Flock provides two types of public links you can share with your congregation or post on social media:
 
-    You can find your public registration link in the integration settings. From there you can also find **integration links** for specific congregations or onboarding flows. Share the full URL with potential members so they can submit their own information directly into your Flock account.
+    - **Registration links** — when someone fills out the public registration form using this link, they are added directly as a **member** in your church account.
+    - **Integration links** — when someone fills out this form, they are added as an **integrante** (a person in the onboarding/integration process) rather than immediately as a full member.
+
+    Both link types can be found and managed under your integration/registration settings. Share the full URL with potential members so they can submit their own information directly into your Flock account.
   </Accordion>
 
   <Accordion title="How do I change my password?">

@@ -1,5 +1,5 @@
 ---
-title: "Public Links: Let Visitors Register Themselves"
+title: "Using Public Links to Let Visitors Register in Flock"
 sidebarTitle: "Public Links"
 description: "Generate shareable registration and integration links that allow visitors to submit their information without logging in to Flock."
 ---
@@ -69,12 +69,6 @@ Just like the registration link, you can set maximum uses, an expiry date, and d
 Every public link uses a **unique security token** embedded in its URL. Only people who have the link can access and submit the form. There are no publicly listed or discoverable form endpoints — possession of the specific URL is the only requirement.
 
 If a link is ever shared in an unintended channel or you suspect misuse, **deactivate it** in Settings. The token becomes invalid immediately, and new submissions are blocked. You can then generate a fresh link to replace it.
-
----
-
-## Rate limiting
-
-To prevent spam and abuse, Flock applies **rate limits** to all public form submissions. This is enforced server-side and limits the number of submissions that can be accepted from the same IP address in a short time window. Legitimate visitors filling in the form normally will never hit these limits.
 
 ---
 
