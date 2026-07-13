@@ -1,0 +1,133 @@
+---
+title: "Frequently Asked Questions About Flock"
+sidebarTitle: "FAQ"
+description: "Answers to common questions about Flock's features, pricing, data security, member limits, and account management."
+---
+
+Here you'll find answers to the most common questions church administrators ask about Flock. If your question isn't covered here, check the relevant section of the documentation or contact our support team at the bottom of this page.
+
+<AccordionGroup>
+
+  <Accordion title="How do I sign up for Flock?">
+    To create your church's account, go to the Flock registration page and fill in your church's details:
+
+    - Church name
+    - CNPJ (your church's Brazilian tax registration number — validated automatically)
+    - Your name and email address
+    - A password (minimum 8 characters, including uppercase letters, lowercase letters, and numbers)
+
+    After submitting the registration form, you'll receive a **confirmation email**. Click the link in that email to activate your account. Your email must be confirmed before you can log in for the first time.
+  </Accordion>
+
+  <Accordion title="Is there a free plan?">
+    Yes. Flock's **Free plan** allows you to manage up to **100 active members** at no cost, with no credit card required. The Free plan includes all of Flock's features — member management, congregations, reports, audit logs, PDF exports, and more. The only difference between plans is the maximum number of active members you can have.
+
+    If your church grows beyond 100 active members, you can upgrade to a paid plan at any time from **Configurações → Plano**.
+  </Accordion>
+
+  <Accordion title="What counts toward my member limit?">
+    Only **active members** count toward your plan's limit. Specifically:
+
+    - **Active members** — count toward the limit
+    - **Inactive members** — do not count (they're still in the system, but not counted)
+    - **Integrantes** (people going through your integration/onboarding process) — do not count
+
+    This means you can keep a full historical record of former members without those records affecting your plan limit. To free up capacity, you can deactivate members who are no longer attending without permanently deleting their data.
+  </Accordion>
+
+  <Accordion title="Can I have multiple users or staff on one account?">
+    Yes. Flock supports multiple users on the same church account, each with their own login and a clearly defined access role. You can invite staff members from **Configurações → Usuários** (visible to Owner and Admin users). There are four roles:
+
+    - **Owner** — full access including billing (one per church)
+    - **Admin** — full access except billing; can manage users
+    - **Editor** — can create, edit, and delete members, congregations, groups, and events
+    - **Reader** — read-only access
+
+    Each invited user receives an email notification and can log in with their own credentials.
+  </Accordion>
+
+  <Accordion title="Can my church have multiple congregations?">
+    Yes. You can create as many congregations as your church needs. Each congregation can have its own address, leader, and contact information, and members can be assigned to a specific congregation.
+
+    The **Sede** (headquarters) is your church's main congregation. When you create additional congregations — such as branch churches or satellite locations — they appear alongside the Sede in filters, reports, and the dashboard. You can view statistics for your entire church or filter by a specific congregation at any time.
+  </Accordion>
+
+  <Accordion title="How do I import existing members?">
+    Flock supports CSV import to help you migrate your existing membership records. To import members:
+
+    1. Go to the **Membros** section in the sidebar.
+    2. Look for the **Importar** option.
+    3. Upload your CSV file. Flock will run a **validation step** first, showing you any rows with errors (such as missing required fields or incorrect date formats) before any data is imported.
+    4. Review the validation results, fix any issues in your file if needed, and then confirm the import.
+
+    The required field for each member row is **name**. Date fields should follow the Brazilian format (DD/MM/YYYY). Duplicate members (based on matching records already in the system) will be flagged during validation.
+  </Accordion>
+
+  <Accordion title="Is my data secure?">
+    Yes. Flock is built with data security as a core principle:
+
+    - **Complete data isolation** — each church's data is fully separated from every other church in the system. There is no way for one church to access another church's records.
+    - **Row-Level Security** — enforced at the database level via Supabase, so even a misconfigured request cannot return another church's data.
+    - **Encrypted connections** — all communication between your browser and Flock's servers uses HTTPS/TLS encryption.
+    - **Secure authentication** — Flock uses industry-standard JWT-based authentication with HttpOnly cookies to protect against XSS attacks, plus automatic session renewal.
+    - **Rate limiting** — login attempts and sensitive operations are rate-limited to protect against brute-force attacks.
+  </Accordion>
+
+  <Accordion title="How do I export my data?">
+    Flock supports PDF export in several areas of the application:
+
+    - **Individual member record** — open any member's detail page and use the export option to download a PDF with their complete profile.
+    - **Member list** — from the Members section, apply your desired filters and export the filtered list as a PDF. You can choose which fields to include in the export.
+    - **Integrante record** — similar to member export, available from an integrante's detail page.
+    - **Dashboard / Reports** — export a complete PDF snapshot of the dashboard, including all charts and statistics.
+
+    All exported PDFs include your church's name in the header.
+  </Accordion>
+
+  <Accordion title="How do I cancel my subscription?">
+    To cancel your Flock subscription:
+
+    1. Go to **Configurações → Plano**.
+    2. Click **Gerenciar Assinatura** to open the Stripe billing portal in a new tab.
+    3. In the Stripe portal, select the option to cancel your subscription.
+
+    After cancelling, you'll retain full access to your current paid plan until the **end of your billing period**. Once the period ends, your account automatically reverts to the Free plan (100-member limit). You do not lose any of your existing data.
+
+    Note: only the account **Owner** can manage billing and subscriptions.
+  </Accordion>
+
+  <Accordion title="What happens if I reach my member limit?">
+    When you're approaching your plan's active member limit, Flock will show a warning. Once you reach the limit:
+
+    - You will **not be able to add new active members** until you either upgrade your plan or reduce your active member count.
+    - Existing members and all other features continue to work normally.
+
+    To resolve this, go to **Configurações → Plano** and upgrade to a plan with a higher member limit. Your new limit takes effect immediately after upgrading.
+  </Accordion>
+
+  <Accordion title="Can visitors register themselves?">
+    Yes. Flock provides **public registration links** that you can share with your congregation or post on social media. When someone fills out the public registration form using your link, they are added to Flock as an **integrante** (a person in the onboarding/integration process) rather than immediately as a full member.
+
+    You can find your public registration link in the integration settings. From there you can also find **integration links** for specific congregations or onboarding flows. Share the full URL with potential members so they can submit their own information directly into your Flock account.
+  </Accordion>
+
+  <Accordion title="How do I change my password?">
+    To change your password:
+
+    1. Click **Configurações** in the sidebar.
+    2. Select the **Conta** tab.
+    3. In the **Alterar Senha** section, enter your current password and your new password.
+    4. Click **Salvar**.
+
+    Your new password must be at least 8 characters and include uppercase letters, lowercase letters, and numbers. You'll receive an email notification confirming that the password was changed.
+
+    If you've forgotten your current password, use the **Esqueci minha senha** link on the login page instead — you'll receive a password reset email without needing to know your current password.
+  </Accordion>
+
+</AccordionGroup>
+
+---
+
+## Still have questions?
+
+If you couldn't find the answer you were looking for, our support team is here to help. Reach out through the support channel and we'll get back to you as quickly as possible.

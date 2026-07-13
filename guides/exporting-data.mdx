@@ -1,0 +1,124 @@
+---
+title: "Exporting Data from Flock as PDF Reports"
+sidebarTitle: "Exporting Data"
+description: "Export individual member profiles, filtered member lists, integration records, and the analytics dashboard as PDF files."
+---
+
+Flock lets you export your data as PDF reports for offline use, sharing with church leadership, printing for archive purposes, or distributing records without giving anyone access to the live system. Exports are generated server-side from the same data you see on screen, so what you filter is exactly what you get.
+
+---
+
+## Export types available
+
+<CardGroup cols={2}>
+  <Card title="Individual member profile" icon="id-card">
+    A full PDF sheet for a single member — all their personal, contact, and church details in one document.
+  </Card>
+  <Card title="Member list PDF" icon="list">
+    A paginated PDF of the members list with selectable fields. Apply filters first to export exactly the subset you need.
+  </Card>
+  <Card title="Member list CSV" icon="table">
+    A spreadsheet-compatible CSV export of the filtered member list, useful for further data processing.
+  </Card>
+  <Card title="Individual integrante PDF" icon="person-walking-arrow-right">
+    A full PDF record for a single person in the integration pipeline.
+  </Card>
+  <Card title="Integration list PDF" icon="list-check">
+    A filtered PDF of the integration pipeline, useful for mentor meetings or leadership reviews.
+  </Card>
+  <Card title="Analytics dashboard PDF" icon="chart-bar">
+    A snapshot of all the charts and summary cards on the dashboard — ideal for reports to leadership or printed bulletins.
+  </Card>
+  <Card title="Calendar PDF" icon="calendar">
+    An export of the current calendar view for printing or offline reference.
+  </Card>
+  <Card title="Congregations list" icon="church">
+    Export the list of congregations and their details.
+  </Card>
+</CardGroup>
+
+---
+
+## Exporting an individual member profile
+
+<Steps>
+  <Step title="Go to the Members module">
+    Click **Membros** in the left sidebar.
+  </Step>
+  <Step title="Open the member record">
+    Search for and click on the member whose profile you want to export.
+  </Step>
+  <Step title="Click the export button">
+    Inside the member's detail view, click the **PDF export** button (usually represented by a document or download icon).
+  </Step>
+  <Step title="Download">
+    Your browser downloads a PDF file named after the member (e.g., `membro-joao-silva.pdf`). The document includes all their personal information, church details, active/inactive status, congregation, and any groups they belong to.
+  </Step>
+</Steps>
+
+---
+
+## Exporting a filtered member list
+
+<Steps>
+  <Step title="Apply your filters">
+    In the Members module, use the search bar and filter options to narrow the list to the people you want to include. For example, filter by congregation, status, or age range. If you want to export everyone, leave the filters clear.
+  </Step>
+  <Step title="Open the export dialog">
+    Click **Exportar** or the PDF export button in the members list toolbar. An export options dialog will open.
+  </Step>
+  <Step title="Select which fields to include">
+    Choose the columns you want to appear in the PDF. You can include or exclude fields such as contact details, dates, address, marital status, and more.
+  </Step>
+  <Step title="Download the PDF">
+    Confirm the export. Flock generates the PDF server-side and your browser downloads it. You can also export the same filtered list as a **CSV file** using the CSV export option in the same dialog.
+  </Step>
+</Steps>
+
+<Tip>
+  Use field selection to keep sensitive information — such as phone numbers or home addresses — out of reports that will be shared broadly. Export a version with only names and congregation for the general announcement board, and a full version for the pastoral team.
+</Tip>
+
+---
+
+## Exporting the analytics dashboard
+
+<Steps>
+  <Step title="Go to the Reports / Dashboard page">
+    Click the **Relatórios** or dashboard link in the sidebar to open the analytics dashboard.
+  </Step>
+  <Step title="Apply the congregation filter (optional)">
+    If you want the PDF to reflect a specific congregation rather than the whole church, select the congregation from the filter at the top of the dashboard.
+  </Step>
+  <Step title="Click Exportar PDF">
+    Click the **Exportar PDF** button. Flock generates a complete PDF that includes all the summary cards and charts currently visible — member counts, demographic breakdowns, age distribution, gender split, baptism trends, admissions over time, and more.
+  </Step>
+  <Step title="Download">
+    The PDF downloads automatically. It is formatted for A4 paper and ready to print or share as a file.
+  </Step>
+</Steps>
+
+---
+
+## Exporting the calendar
+
+<Steps>
+  <Step title="Go to the Calendar section">
+    Click **Calendário** in the left sidebar.
+  </Step>
+  <Step title="Click the PDF export button">
+    Use the PDF export button in the calendar toolbar. The current view (with all visible events and groups) is exported as a PDF file.
+  </Step>
+</Steps>
+
+---
+
+## Exporting integration records
+
+You can export individual integrante PDFs or a filtered list PDF directly from the Integration module — the process mirrors the member export flow. See the [Integration Pipeline guide](/guides/managing-integration) for details.
+
+---
+
+<Note>
+  PDF generation happens **server-side**. For large datasets (hundreds of members), the process may take a few seconds before the download begins. Do not close the tab or click export again while it is generating.
+</Note>

@@ -1,0 +1,76 @@
+---
+title: "Team & Roles: Manage Access to Your Church Account"
+sidebarTitle: "Team & Roles"
+description: "Invite team members to help manage your church in Flock. Learn what each access role can do and how to assign them."
+---
+
+Flock supports multiple users working together on the same church account, each with a clearly defined level of access. Whether you're bringing on a secretary, a volunteer coordinator, or a read-only board observer, you can give each person exactly the permissions they need — no more, no less. All team management is handled from the **Configurações → Usuários** section.
+
+## The Four Access Roles
+
+<CardGroup cols={2}>
+  <Card title="Owner" icon="crown">
+    The account owner has full and unrestricted access to everything in Flock, including billing management and the ability to delete the church account. There is exactly **one Owner per church** — the person who created the account. The Owner role cannot be transferred or removed through the UI.
+  </Card>
+  <Card title="Admin" icon="shield-halved">
+    Admins have full access to all features except billing management. They can invite and manage other users (including assigning and removing the Admin, Editor, and Reader roles), manage members, congregations, groups, and view audit logs.
+  </Card>
+  <Card title="Editor" icon="pen-to-square">
+    Editors can create, edit, and delete members, integrantes, congregations, groups, and calendar events. They cannot invite new users, manage the team, access billing, or view audit logs.
+  </Card>
+  <Card title="Reader" icon="eye">
+    Readers have read-only access. They can view all data — members, congregations, reports, the dashboard — but cannot create, edit, or delete any records.
+  </Card>
+</CardGroup>
+
+## Permissions by Role
+
+| Action | Owner | Admin | Editor | Reader |
+|---|:---:|:---:|:---:|:---:|
+| View all data | ✓ | ✓ | ✓ | ✓ |
+| Add/edit/delete members | ✓ | ✓ | ✓ | ✗ |
+| Manage integrantes | ✓ | ✓ | ✓ | ✗ |
+| Manage congregations | ✓ | ✓ | ✓ | ✗ |
+| Manage groups | ✓ | ✓ | ✓ | ✗ |
+| Manage calendar events | ✓ | ✓ | ✓ | ✗ |
+| Invite team members | ✓ | ✓ | ✗ | ✗ |
+| Edit/remove team members | ✓ | ✓ | ✗ | ✗ |
+| View audit logs | ✓ | ✓ | ✗ | ✗ |
+| Manage subscription & billing | ✓ | ✗ | ✗ | ✗ |
+| Delete the church account | ✓ | ✗ | ✗ | ✗ |
+
+## Inviting a Team Member
+
+<Steps>
+  <Step title="Open Settings">
+    Click **Configurações** in the sidebar.
+  </Step>
+  <Step title="Go to the Usuários tab">
+    At the top of the Settings page, click the **Usuários** tab. This section is only visible to Owner and Admin users.
+  </Step>
+  <Step title="Add the user">
+    Click **Adicionar Usuário**. Enter the person's email address and select the role you want to assign (Admin, Editor, or Reader).
+  </Step>
+  <Step title="Send the invitation">
+    Click **Salvar**. Flock will immediately send the invitee an email notification informing them that they've been added to your church account on Flock. If the email address doesn't yet have a Flock account, one will be created automatically — the person will set their own password on first login.
+  </Step>
+</Steps>
+
+<Note>
+  Each user can only belong to **one church account** at a time. If you try to invite someone whose email is already linked to another church in Flock, you'll see an error. Each email address is unique across the platform.
+</Note>
+
+## Managing Existing Team Members
+
+From the **Usuários** tab you can see all users currently linked to your church, along with their role and status. Owners and Admins can:
+
+- **Change a user's role** — click the edit icon next to their entry and select the new role.
+- **Remove a user** — click the remove (delete) icon. The user's Flock account is not deleted; they simply lose access to your church.
+
+<Note>
+  The Owner role cannot be edited or removed from the Users management screen. Every action performed by any team member — including role changes and user invitations — is automatically recorded in the **Audit Logs**.
+</Note>
+
+<Tip>
+  Give your church secretary or administrative staff the **Editor** role. They'll be able to manage all member records, congregations, and groups without having access to billing or sensitive account controls.
+</Tip>

@@ -1,0 +1,108 @@
+---
+title: "Managing Your Flock Subscription and Billing"
+sidebarTitle: "Subscription"
+description: "Upgrade or downgrade your plan, view invoices, update payment details, and understand how your member limit affects your subscription."
+---
+
+Flock uses **Stripe** for secure payment processing, so your financial data is never stored directly in Flock. All billing actions — upgrading, downgrading, viewing invoices, and updating your credit card — are managed from **Configurações → Plano**. Only the account **Owner** can access billing settings.
+
+## Available Plans
+
+| Plan | Member Limit | Monthly Price |
+|---|:---:|:---:|
+| **Free** | 100 members | R$ 0 |
+| **200 Members** | 200 members | R$ 29,99/month |
+| **500 Members** | 500 members | R$ 59,99/month |
+| **800 Members** | 800 members | R$ 89,99/month |
+
+All paid plans include every feature in Flock. The only difference between plans is the maximum number of active members you can have in your account.
+
+## Viewing Your Current Plan
+
+When you open **Configurações → Plano**, you'll see a summary card showing:
+
+- Your **current plan** name and price
+- Your subscription **status** (Active, Cancelled, Past Due, etc.)
+- The subscription **start date**
+- Any upcoming changes (e.g., a scheduled end date if you've cancelled)
+
+## Upgrading Your Plan
+
+<Steps>
+  <Step title="Go to Settings → Plano">
+    Click **Configurações** in the sidebar, then select the **Plano** tab.
+  </Step>
+  <Step title="Click Trocar de Plano">
+    Click the **Trocar de Plano** button. This button is only active when your subscription is in an Active state.
+  </Step>
+  <Step title="Select your new plan">
+    A modal will appear listing all available plans. Click the plan you want to upgrade to. Your current plan will be marked and cannot be selected.
+  </Step>
+  <Step title="Confirm the change">
+    Review the confirmation screen showing your current plan and your new plan, then click **Confirmar Troca**.
+  </Step>
+  <Step title="Change takes effect immediately">
+    Your new member limit is active right away. Stripe will calculate a prorated charge for the remaining days in your current billing period and apply it to your next invoice.
+  </Step>
+</Steps>
+
+## Downgrading Your Plan
+
+Downgrading follows the same steps as upgrading — open **Trocar de Plano**, select a lower-tier plan, and confirm. The change takes effect immediately.
+
+<Warning>
+  If your church currently has more active members than the new plan allows, Flock will **block the downgrade** until you reduce your active member count to fit within the new limit. For example, if you have 350 active members and want to downgrade to the 200-member plan, you'll need to deactivate at least 150 members first. Flock will show you exactly how many members you need to remove before the change can proceed.
+</Warning>
+
+## Accessing the Stripe Billing Portal
+
+The Stripe Billing Portal gives you full control over your payment details and invoice history. From it you can:
+
+- View and download **past invoices**
+- Update your **credit card** or payment method
+- **Cancel** your subscription
+
+To open the portal:
+
+<Steps>
+  <Step title="Go to Settings → Plano">
+    Click **Configurações** in the sidebar, then select the **Plano** tab.
+  </Step>
+  <Step title="Click Gerenciar Assinatura">
+    Click the **Gerenciar Assinatura** button. The Stripe portal will open in a new tab.
+  </Step>
+  <Step title="Make your changes in Stripe">
+    Update your payment method, download invoices, or cancel your subscription directly in the Stripe portal.
+  </Step>
+  <Step title="Return to Flock">
+    When you're done, close the Stripe tab and return to Flock. Your subscription data will refresh automatically when you navigate back to the **Plano** tab.
+  </Step>
+</Steps>
+
+## What Happens When You Reach Your Member Limit
+
+Flock monitors your active member count against your plan limit at all times.
+
+- As you approach your limit, you'll see a **warning** on the member list and dashboard.
+- Once you reach the limit, **adding new members will be blocked**. The "add member" action will show an error explaining that you've reached your plan's limit.
+- To continue adding members, go to **Configurações → Plano** and upgrade to a higher plan.
+
+<Note>
+  Only **active members** count toward your plan limit. Inactive members and integrantes (people in the integration/onboarding process) do not affect your count.
+</Note>
+
+## Cancelling Your Subscription
+
+To cancel, open the **Stripe Billing Portal** (via **Gerenciar Assinatura**) and cancel from there.
+
+- After cancelling, you'll keep full access to your paid plan until the **end of the current billing period**.
+- Once the billing period ends, your account automatically reverts to the **Free plan** (100-member limit).
+- If you have more than 100 active members when the downgrade occurs, you won't be able to add new members until you reduce your active count below 100.
+
+## Payment Issues
+
+If your payment fails, your subscription will enter a **Past Due** state. You'll see a prominent alert on the **Plano** page prompting you to update your payment method. New members cannot be added while a payment is overdue. Click **Atualizar pagamento** in the alert to open the Stripe portal and resolve the issue.
+
+<Note>
+  Only the account **Owner** can view or manage billing, subscription, and payment settings. Admin, Editor, and Reader users will not see the **Plano** tab in Settings.
+</Note>

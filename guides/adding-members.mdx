@@ -1,0 +1,165 @@
+---
+title: "How to Add and Manage Members in Flock"
+sidebarTitle: "Adding Members"
+description: "Step-by-step guide to adding individual members, importing from CSV, managing active status, and keeping member records up to date."
+---
+
+The Members module is the heart of Flock. Every person who belongs to your church lives here — with their contact details, dates, congregational affiliation, role, and status. Keeping this list accurate means your reports, filters, and analytics always reflect reality. This guide walks you through everything from adding your first member to cleaning up the list over time.
+
+## Adding a single member
+
+<Steps>
+  <Step title="Open the Members module">
+    Click **Membros** in the left sidebar to go to the members list.
+  </Step>
+  <Step title="Start a new record">
+    Click the **Adicionar membro** button in the top-right area of the page.
+  </Step>
+  <Step title="Fill in the required fields">
+    At minimum, enter the member's **full name** and select their **congregation** (congregação). These are the only fields the system requires before saving.
+  </Step>
+  <Step title="Add optional details">
+    Enrich the record with any additional information you have:
+
+    | Field | Notes |
+    |---|---|
+    | Email | Used for communications |
+    | Telefone / WhatsApp | Brazilian format |
+    | Date of birth (Data de nascimento) | Enables age-based analytics |
+    | Baptism date (Data de batismo) | Tracked in the dashboard |
+    | Admission date (Data de recebimento) | When they joined the church |
+    | Marital status (Estado civil) | Solteiro, Casado, Divorciado, Viúvo, Outro |
+    | Gender (Gênero) | Masculino / Feminino |
+    | Nationality (Nacionalidade) | |
+    | Occupation (Ocupação) | |
+    | Spouse name (Nome do cônjuge) | |
+    | Role / office (Cargo) | Must already exist in the Cargos module |
+    | Address fields | See the tip below about CEP auto-fill |
+  </Step>
+  <Step title="Use CEP auto-fill for addresses">
+    When you type a valid Brazilian postal code (CEP) in the address section, Flock automatically populates the street, neighbourhood, city, and state fields. You can still edit them manually afterwards.
+  </Step>
+  <Step title="Save">
+    Click **Salvar**. The member appears in the list immediately and counts towards your plan's member total.
+  </Step>
+</Steps>
+
+<Note>
+  The plan member counter is displayed at the top of the app. It updates every time you add or activate a member. Inactive members are not counted against this limit.
+</Note>
+
+---
+
+## Editing a member
+
+To update any information on an existing record:
+
+<Steps>
+  <Step title="Find the member">
+    Use the search bar or apply filters to locate the person in the list.
+  </Step>
+  <Step title="Open the record">
+    Click anywhere on the member's row (or the edit icon if visible) to open their detail view.
+  </Step>
+  <Step title="Click Edit">
+    Click the **Editar** button to enter edit mode.
+  </Step>
+  <Step title="Modify and save">
+    Change whichever fields need updating, then click **Salvar**. All changes are saved immediately.
+  </Step>
+</Steps>
+
+---
+
+## Deactivating a member
+
+Deactivating is the preferred way to remove someone from day-to-day operations without losing their history. Inactive members remain in the database, can still be found with filters, but are excluded from default reports and do not count against your plan's active member limit.
+
+<Steps>
+  <Step title="Open the member record">
+    Locate and open the member you want to deactivate.
+  </Step>
+  <Step title="Toggle the status">
+    Click **Desativar** (or the status toggle). A confirmation dialog will appear.
+  </Step>
+  <Step title="Confirm">
+    Confirm the action. The member's status changes to **Inativo** immediately.
+  </Step>
+</Steps>
+
+---
+
+## Reactivating a member
+
+If a previously inactive person returns to the church, reactivation is just as simple:
+
+<Steps>
+  <Step title="Find the inactive member">
+    Filter the members list by **Status: Inativo** to locate the person.
+  </Step>
+  <Step title="Open and reactivate">
+    Open their record and click **Reativar** (or toggle the status back to active). Confirm when prompted. They will count against your plan limit again.
+  </Step>
+</Steps>
+
+---
+
+## Deleting a member
+
+<Warning>
+  Deletion is **permanent and cannot be undone**. The member's record, history, and all associated data are removed from the system entirely. In almost all cases, **deactivation** is the better choice — it preserves the record and keeps your historical data intact. Only delete a member if the record was created by mistake.
+</Warning>
+
+To delete a member, open their record and select the delete option. You will be asked to confirm before anything is removed.
+
+---
+
+## Importing members from CSV
+
+If you are migrating from another system or have a spreadsheet of members ready, you can import them all at once.
+
+<Steps>
+  <Step title="Open the import dialog">
+    In the Members list, click the **import icon** (upload icon) or the **Importar** option to open the CSV import dialog.
+  </Step>
+  <Step title="Upload your file">
+    Select your `.csv` file (maximum **10 MB**). The system validates the file as soon as it is uploaded — it checks column structure, required fields, and data formats before creating any records.
+  </Step>
+  <Step title="Review validation results">
+    Flock shows you a preview of the import with any errors or warnings highlighted. Fix the issues in your spreadsheet, re-upload, and repeat until the validation passes cleanly.
+  </Step>
+  <Step title="Confirm the import">
+    Click **Confirmar** to proceed. Members are created in batch. When the process finishes, you will see a summary showing how many records were imported successfully.
+  </Step>
+</Steps>
+
+<Note>
+  The import respects your plan's member limit. If importing would exceed your limit, the operation will be blocked. Deactivate unused members or upgrade your plan before importing.
+</Note>
+
+---
+
+## Adding multiple members at once (batch)
+
+For programmatic or bulk use cases, Flock's API supports a **batch member creation** endpoint (`POST /members/batch`). This allows you to send an array of member objects in a single request. This option is intended for technical integrations — for everyday use, the CSV import described above is the simplest path.
+
+---
+
+## Searching and filtering members
+
+The members list supports both quick and advanced filtering so you can find exactly who you need:
+
+<CardGroup cols={2}>
+  <Card title="Text search" icon="magnifying-glass">
+    The search bar matches across name, email, phone, WhatsApp, spouse name, and document number simultaneously.
+  </Card>
+  <Card title="Quick filters" icon="filter">
+    Filter by **status** (active / inactive / all), **congregation**, and **role (cargo)** using the filter chips above the list.
+  </Card>
+  <Card title="Advanced filters" icon="sliders">
+    Open **Filtros avançados** for gender, marital status, age range, nationality, city, state, neighbourhood, occupation, and date ranges for baptism or admission.
+  </Card>
+  <Card title="List and grid view" icon="table-columns">
+    Toggle between list view (table rows) and card/grid view. Your preference is saved automatically for next time.
+  </Card>
+</CardGroup>

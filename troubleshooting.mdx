@@ -1,0 +1,140 @@
+---
+title: "Troubleshooting Common Issues in Flock"
+sidebarTitle: "Troubleshooting"
+description: "Solutions for common problems in Flock including login issues, email confirmation, member limits, and CSV import errors."
+---
+
+Most issues in Flock have a straightforward fix. This page covers the most common problems reported by church administrators, along with step-by-step solutions. Work through the relevant section below, and if the issue persists, reach out to the support team at the bottom of this page.
+
+<AccordionGroup>
+
+  <Accordion title="I can't log in">
+    If you're unable to log in to your Flock account, try the following steps in order:
+
+    1. **Check that your email is confirmed.** Flock requires email confirmation before you can log in. If you registered recently and haven't confirmed your email, check your inbox (and spam folder) for the confirmation message from Flock. If you can't find it, use the **Resend confirmation** option — see the section below.
+
+    2. **Try resetting your password.** Click **Esqueci minha senha** on the login page and follow the instructions in the reset email. Make sure your new password meets the requirements: at least 8 characters, with uppercase letters, lowercase letters, and numbers.
+
+    3. **Check Caps Lock.** Passwords are case-sensitive. Make sure Caps Lock is not accidentally turned on.
+
+    4. **Clear your browser cookies.** Stale or corrupted session cookies can sometimes block the login flow. Clear your cookies for the Flock domain (or try opening Flock in a private/incognito window) and attempt to log in again.
+
+    5. **Try a different browser.** If the issue persists, test in a different browser to rule out a browser-specific problem.
+  </Accordion>
+
+  <Accordion title="I didn't receive the confirmation email">
+    If you registered for Flock but the confirmation email hasn't arrived:
+
+    1. **Check your spam or junk folder.** Confirmation emails are sometimes filtered by email providers. Search for an email from Flock in your spam folder.
+
+    2. **Double-check the email address you registered with.** Make sure there are no typos in the address. If you registered with the wrong email, you'll need to register again with the correct one.
+
+    3. **Use the Resend Confirmation option.** Once you are logged in (or from the registration confirmation page), go to **Configurações → Conta** and look for the **Reenviar confirmação** option. This will send a fresh confirmation link to your email address.
+
+    4. **Wait a few minutes.** Occasionally, email delivery is delayed by a few minutes due to mail server queues.
+
+    If none of the above work, contact support with the email address you used to register.
+  </Accordion>
+
+  <Accordion title="I can't add more members">
+    If the "add member" button is disabled or you see an error when trying to create a new member, your church has reached the active member limit for your current plan.
+
+    You have two options:
+
+    - **Upgrade your plan** — go to **Configurações → Plano** and select a plan with a higher member limit. Your new limit takes effect immediately after upgrading.
+    - **Deactivate members you no longer need** — if some members in your list are no longer attending, you can set their status to **Inactive**. Inactive members don't count toward your plan limit, freeing up capacity for new active members without permanently deleting any records.
+
+    Your current plan and how many active members you have can always be seen on the **Configurações → Plano** page.
+  </Accordion>
+
+  <Accordion title="A member can't be deleted">
+    If you're trying to delete a member and the action is blocked, it's likely because that member holds a leadership role:
+
+    - **Congregation leader** — if the member is assigned as the leader of a congregation, you must first go to that congregation's settings and assign a different leader (or remove the leader field), then return to delete the member.
+    - **Group leader** — similarly, if the member leads a group, you'll need to change or remove that role before the member can be deleted.
+
+    Once the member no longer holds any leadership roles, the delete action will proceed normally. If you're unsure which role is blocking the deletion, check both the congregation list and the groups list for that member's name.
+  </Accordion>
+
+  <Accordion title="A congregation can't be deleted">
+    Flock prevents you from deleting a congregation that still has **active members** assigned to it. This protects your data integrity and prevents members from being left without a congregation.
+
+    To delete the congregation:
+
+    1. Go to the **Membros** section and filter by the congregation you want to delete.
+    2. Reassign those members to a different congregation, or deactivate them if they are no longer attending.
+    3. Once the congregation has zero active members, return to the congregations list and delete it.
+
+    Note: inactive members assigned to a congregation do not block deletion — only active members do.
+  </Accordion>
+
+  <Accordion title="The CSV import failed">
+    If your CSV import did not complete successfully, Flock's validation step will identify the specific rows and columns that contain errors. Common causes include:
+
+    - **Missing required field** — the `name` field is required for every row. Any row without a name will fail validation.
+    - **Invalid date format** — date fields (such as birth date, baptism date, and admission date) must be in the format `DD/MM/YYYY`. Dates in other formats (e.g., `2024-01-15` or `01/15/2024`) will be rejected.
+    - **Duplicate members** — if a row matches a member already in your system (based on name or other identifying fields), it will be flagged as a potential duplicate.
+    - **Invalid field values** — fields with fixed options (such as gender or marital status) must use the accepted values. Check the import template for the correct options.
+
+    **To fix the import:**
+    1. Review the validation report shown by Flock — it lists each error with the row number and field name.
+    2. Open your CSV file, correct the flagged rows, and save.
+    3. Re-upload the corrected file and run validation again before confirming the import.
+
+    If you don't have an import template, you can use the validation step on a small test file first to confirm the expected format.
+  </Accordion>
+
+  <Accordion title="The dashboard or reports show empty charts">
+    If you open the Dashboard and see empty charts or zero counts, the most likely explanation is that you have **no active members** in your account yet.
+
+    Flock's reports and charts only include **active** members. If all your members are inactive, or if you haven't added any members yet, the charts will correctly show empty or zero values — this is expected behavior and not a bug.
+
+    To populate the dashboard:
+    - Add members via the **Membros → Adicionar Membro** button, or import them via CSV.
+    - Make sure the members you've added have an **Active** status.
+
+    If you do have active members but the charts still appear empty, try refreshing the page. If the problem persists, contact support.
+  </Accordion>
+
+  <Accordion title="I forgot my password">
+    If you've forgotten your password and can't log in:
+
+    1. Go to the Flock login page.
+    2. Click **Esqueci minha senha** below the login form.
+    3. Enter the email address associated with your Flock account.
+    4. Click **Enviar**. You'll receive a password reset email within a few minutes.
+    5. Click the link in the email and enter a new password. The link is valid for a limited time, so use it promptly.
+
+    Check your spam folder if the email doesn't arrive within a few minutes. Your new password must be at least 8 characters and include uppercase letters, lowercase letters, and numbers.
+  </Accordion>
+
+  <Accordion title="The public registration link isn't working">
+    Public registration links use a secure token in the URL. If the link you shared with your congregation isn't working, check the following:
+
+    - **Make sure you're sharing the full URL.** The link contains a long token after the base URL. If the URL was truncated (e.g., by a messaging app wrapping long links), copy the link directly from Flock and share it again.
+    - **Check if the link was regenerated.** If someone with Admin or Owner access recently regenerated the registration link from the integration settings, the old link will no longer be valid. Go back to Flock's integration settings to get the current active link and share the new one with your congregation.
+    - **Test the link in a private browser window** to rule out a local cache or cookie issue.
+
+    If the link still doesn't work after these checks, contact support with the link you're trying to use.
+  </Accordion>
+
+  <Accordion title="My session keeps expiring">
+    Flock uses an automatic session renewal system with secure HttpOnly cookies, so under normal circumstances you should stay logged in for extended periods.
+
+    If you're being logged out frequently or unexpectedly:
+
+    1. **Clear your browser cookies** for the Flock domain. Corrupted or conflicting cookies from a previous session can cause authentication issues.
+    2. **Log in again** after clearing cookies.
+    3. **Avoid using browser extensions** that aggressively clear cookies or block storage (such as some privacy or ad-blocking extensions), as these can interfere with session management.
+    4. **Check your browser's cookie settings** — make sure cookies are not set to be deleted when the browser closes, or that the Flock domain is on an exceptions list.
+
+    If you're accessing Flock on multiple devices simultaneously, signing out of one device does not sign out the others. If the problem continues after the above steps, contact support.
+  </Accordion>
+
+</AccordionGroup>
+
+---
+
+## Need more help?
+
+If you've worked through the troubleshooting steps above and the issue is still not resolved, our support team is ready to assist. Reach out with a description of the problem, the steps you've already tried, and (if applicable) any error messages you're seeing.

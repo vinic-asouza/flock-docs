@@ -1,47 +1,97 @@
 ---
-title: "Quickstart"
-description: "Begin with a guide on the fastest path to a successful outcome"
+title: "Get Started with Flock in Under 10 Minutes"
+sidebarTitle: "Quickstart"
+description: "Create your church account, set up your first congregation, add your first member, and explore your analytics dashboard in a few simple steps."
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
-
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
-
-## Prerequisites
-
-Before you begin, you must have:
-
-- Requirement one (for example, Node.js 18+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
-
-## Get started
+This guide walks you through everything you need to go from a blank account to a functioning church management workspace. By the end, you'll have a congregation set up, at least one member registered, and a clear sense of where everything lives inside Flock. The whole process takes fewer than 10 minutes — even less if you have your church details handy.
 
 <Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
+  <Step title="Create your account">
+    Go to the Flock registration page (`/register`). You'll fill in two sets of information:
 
-    ```bash
-    npm install your-package
-    ```
+    **Your personal credentials:**
+    - Full name
+    - Email address
+    - Password (minimum 8 characters, must include uppercase letters, lowercase letters, and numbers)
+    - Phone number
+
+    **Your church's details:**
+    - Church name
+    - Denomination
+    - Address, city, and state (cities are loaded automatically from the IBGE database)
+    - CNPJ (optional, but recommended for official records)
+    - Church email and phone
+
+    After you submit the form, Flock sends a confirmation email to the address you provided. **Open that email and click the confirmation link** — your account won't be active until you do. Once confirmed, you'll be directed to choose a plan. Select the **free plan** to get started immediately with up to 100 members, or pick a paid plan if you need more capacity right away.
   </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
+  <Step title="Log in and explore the dashboard">
+    After confirming your email and selecting a plan, log in at `/login` with your email and password. You'll land on the **Painel** (analytics dashboard) — this is your church's home base.
 
-    ```bash
-    your-cli init
-    ```
+    The **sidebar** on the left is your main navigation. Here's what each item does:
+
+    | Sidebar item | What it does |
+    |---|---|
+    | **Painel** | Analytics dashboard — demographics, growth, geography |
+    | **Membros** | Full membership registry |
+    | **Integração** | Pre-membership pipeline for visitors and candidates |
+    | **Grupos** | Ministries, cell groups, and departments |
+    | **Congregações** | Branch locations and meeting points |
+    | **Calendário** | Church events and schedule |
+    | **Configurações** | Account, church profile, users, and subscription |
+
+    The **header** at the top shows your church name, your current member count relative to your plan limit, and your user role. You can log out from the header as well.
   </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
+  <Step title="Set up your first congregation">
+    Click **Congregações** in the sidebar. You'll see an empty list with an **Adicionar congregação** button.
 
-    ```bash
-    your-cli start
-    ```
+    Click it and fill in the form:
+    - **Name** (required) — e.g., "Sede" or your main campus name
+    - Address, city (IBGE lookup), and state
+    - Leader — you can leave this blank for now and come back after adding members
+    - Contact phone
+
+    Click **Salvar**. Your congregation appears in the list and is now available as an option when you add members, create groups, or schedule events.
+
+    <Note>
+      Your main campus (Sede) is the default congregation already associated with your church. Use this step to add additional branch locations or meeting points.
+    </Note>
+  </Step>
+  <Step title="Add your first member">
+    Click **Membros** in the sidebar, then click **Adicionar membro**. The member form has several sections — you don't need to fill everything in right now. The required fields are clearly marked with an asterisk (*).
+
+    At a minimum, fill in:
+    - **Full name** (required)
+    - **Congregation** — select the congregation you just created
+    - Contact details (phone, email) if available
+
+    Additional fields you can fill in later include:
+    - Personal data: date of birth, gender, marital status, nationality
+    - Address: CEP auto-fills address details when entered
+    - Church data: baptism date, admission date, role/position
+    - Documents: CPF, RG
+
+    Click **Salvar**. The member appears in your list, and the member counter in the header updates immediately. You can switch between **list view** and **grid/card view** using the toggle at the top right of the members page — Flock remembers your preference.
+  </Step>
+  <Step title="Explore your reports">
+    Click **Painel** (the first item in the sidebar) to return to the analytics dashboard. Now that you have at least one member, you'll see your data start to populate.
+
+    The dashboard is organized into several sections:
+    - **Summary cards** — total members, active vs. inactive, new members in the last 30 days, recent baptisms
+    - **Demographics** — gender distribution, marital status, age group breakdown across 7 ranges
+    - **Church structure** — distribution by role and by congregation
+    - **Timeline** — baptisms and admissions by month and year
+    - **Geography** — member distribution by state and city
+    - **Occupations** — top 10 most common occupations in your church
+
+    Use the **congregation selector** at the top of the dashboard to toggle between a church-wide view, your main campus (Sede), or any specific congregation. When you're ready to share the data with your leadership team, click **Exportar PDF** to download a complete PDF report.
   </Step>
 </Steps>
 
 <Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
-
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
+  Before a visitor officially joins your church, use the **Integration** module (`/integration`) to track their journey. Add them as an **integrante**, assign a mentor from your membership, and set their expected congregation. Integrantes do **not** count against your plan's member limit. When they're ready to join formally, click **Converter em membro** inside their record — Flock creates a full member profile in one step.
 </Tip>
+
+<Note>
+  Your plan determines how many **active members** you can have in the system at one time. The free plan supports up to 100 active members. If you reach your limit, you'll see an alert in the header and Flock will prevent you from adding new members until you upgrade. Go to **Settings → Subscription** to choose a higher-capacity plan. Inactive members stay in your records and don't count against the limit.
+</Note>

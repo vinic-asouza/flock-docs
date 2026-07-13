@@ -1,0 +1,108 @@
+{
+  "projectType": "saas",
+  "projectName": "Flock",
+  "projectDescription": "Flock is a SaaS church management platform that helps churches manage members, congregations, groups, events, and analytics — all in one place.",
+  "theme": "almond",
+  "primaryColor": "#090725",
+  "lightColor": "#f5f5f5",
+  "darkColor": "#0d0a3a",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "plans-billing"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/members",
+              "features/integration",
+              "features/congregations",
+              "features/groups",
+              "features/calendar",
+              "features/reports"
+            ]
+          },
+          {
+            "group": "Using the App",
+            "pages": [
+              "guides/adding-members",
+              "guides/managing-integration",
+              "guides/public-links",
+              "guides/exporting-data"
+            ]
+          },
+          {
+            "group": "Account & Settings",
+            "pages": [
+              "settings/church-profile",
+              "settings/team-roles",
+              "settings/subscription",
+              "settings/audit-logs"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "faq",
+              "troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Full member lifecycle management with advanced filters and search",
+    "New-member integration pipeline with mentor assignment and conversion flow",
+    "Multi-congregation structure with individual management",
+    "Groups and ministries management",
+    "Church event calendar with participant tracking",
+    "Analytics dashboard with demographic, structural, and temporal reports",
+    "PDF export for members, lists, and dashboards",
+    "Public self-registration and integration links (no login required)",
+    "Multi-tenant data isolation per church",
+    "Role-based access control (owner, admin, editor, reader)",
+    "Stripe-powered subscription plans (Free/200/500/800 members)"
+  ],
+  "publicApiSurface": [
+    "POST /api/auth/register",
+    "POST /api/auth/login",
+    "POST /api/auth/logout",
+    "GET /api/members",
+    "POST /api/members",
+    "PUT /api/members/:id",
+    "DELETE /api/members/:id",
+    "PATCH /api/members/:id/status",
+    "POST /api/members/batch",
+    "GET /api/members/reports",
+    "GET /api/members/birthdays/count",
+    "GET /api/members/birthdays/list",
+    "POST /api/members/import",
+    "GET /api/integration",
+    "POST /api/integration",
+    "GET /api/congregations",
+    "POST /api/congregations",
+    "GET /api/roles",
+    "POST /api/roles",
+    "GET /api/calendar",
+    "POST /api/calendar",
+    "GET /api/groups",
+    "POST /api/groups",
+    "GET /api/export/member/:id",
+    "GET /api/export/members",
+    "GET /api/church",
+    "PUT /api/church",
+    "GET /api/account",
+    "PUT /api/account/email",
+    "PUT /api/account/password",
+    "GET /api/account/logs"
+  ]
+}

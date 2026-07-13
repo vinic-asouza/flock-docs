@@ -1,0 +1,141 @@
+---
+title: "Member Management: Track Your Entire Church Family"
+sidebarTitle: "Members"
+description: "Add, edit, filter, and export member records. Manage active and inactive members, run searches, and view birthday lists."
+---
+
+The Members module is the heart of Flock — it's where you store, search, and maintain records for every person in your church family. From basic contact details to baptism history, congregation assignment, and occupation, each member profile gives you a complete, living picture of your congregation. Everything you enter here feeds directly into reports, group rosters, calendar events, and the integration pipeline.
+
+## Member records
+
+Each member profile holds a rich set of information organized into logical sections:
+
+<CardGroup cols={2}>
+  <Card title="Personal info" icon="user">
+    Full name, date of birth, gender, nationality, marital status, and spouse name.
+  </Card>
+  <Card title="Contact details" icon="address-book">
+    Email address, phone number, and WhatsApp number.
+  </Card>
+  <Card title="Address" icon="location-dot">
+    Street, neighbourhood, city, state, and postal code. The form auto-fills address fields when you type a valid CEP.
+  </Card>
+  <Card title="Church details" icon="church">
+    Congregation, role (cargo), admission date, baptism date, and occupation.
+  </Card>
+</CardGroup>
+
+## Search & filters
+
+You can locate any member in seconds using text search and a layered filter system.
+
+**Text search** matches across name, email, phone, WhatsApp, spouse name, and document number simultaneously — type any fragment and Flock narrows the list in real time.
+
+**Basic filters** let you slice by:
+- **Status** — active, inactive, or all
+- **Congregation** — any congregation registered under your church
+- **Role (cargo)** — filter by a specific ministry role
+
+**Advanced filters** give you even finer control:
+
+<Accordion title="All available advanced filters">
+
+| Filter | Options |
+|---|---|
+| Gender | Masculino / Feminino |
+| Marital status | Solteiro, Casado, Divorciado, Viúvo, Outro |
+| Nationality | Any text value |
+| State | Brazilian state (via IBGE) |
+| City | City within selected state |
+| Neighbourhood | Free text |
+| Age range | Minimum and maximum age |
+| Occupation | Free text |
+| Birth date range | From / to |
+| Baptism date range | From / to |
+| Admission date range | From / to |
+
+</Accordion>
+
+Active filters appear as chips at the top of the list. Click the **×** on any chip to remove that filter without resetting the others.
+
+You can also **sort** by any column — name, admission date, baptism date, and more — in ascending or descending order.
+
+## List vs Grid view
+
+The member list supports two display modes:
+
+- **List view** — a compact table showing name, contact, congregation, and status in rows. Best for scanning large lists and comparing records side by side.
+- **Grid view** — a card-based layout that shows each member as a visual card with their photo placeholder, name, and key details. Best for a more personal, at-a-glance overview.
+
+Toggle between modes using the icons in the top-right of the member list. Flock remembers your preferred mode the next time you visit.
+
+## Active and inactive members
+
+Flock distinguishes between **active** and **inactive** members so your historical records are never lost:
+
+- **Active members** appear in all default lists, reports, and analytics.
+- **Inactive members** remain in the system with their full history intact, but they are hidden from default filters and do not count in standard demographic reports.
+
+To change a member's status, open their profile and choose **Deactivar** or **Reativar**. Confirm the action in the dialog that appears. The status change takes effect immediately and is atomic — there is no risk of partial updates.
+
+<Note>
+  Deactivating a member does **not** delete their record. All their data — baptism dates, addresses, group memberships — is preserved and accessible if you filter by "Inactive" or "All."
+</Note>
+
+## Batch operations
+
+If you need to register several new members at once — for example, after a membership class — use the **batch creation** feature. Click the batch icon next to the main "Add member" button, fill in each record in the multi-row form, and save all records in a single operation.
+
+## CSV import
+
+For larger migrations, Flock lets you import members from a CSV file:
+
+<Steps>
+  <Step title="Prepare your CSV">
+    Format your spreadsheet using the column order expected by Flock. Download the template from the import dialog if you need a starting point.
+  </Step>
+  <Step title="Upload and validate">
+    Click the import icon (upload arrow) in the Members header. Select your `.csv` file (maximum 10 MB). Flock validates the file and shows a preview with any errors highlighted.
+  </Step>
+  <Step title="Fix errors">
+    Correct any flagged rows in your spreadsheet, re-upload, and validate again until no errors remain.
+  </Step>
+  <Step title="Confirm the import">
+    Click **Importar** to process the file. Flock shows a summary of how many records were created successfully.
+  </Step>
+</Steps>
+
+<Note>
+  The import respects your plan's member limit. If the file would push you over your limit, the import is blocked and you'll see a message telling you how many slots are available.
+</Note>
+
+## Birthday list
+
+The Members module includes a dedicated birthday view so you never miss celebrating a church family member. Navigate to the **Aniversariantes** section to see all members whose birthday falls in the current month, along with their contact details so you can send a message or call directly.
+
+<Tip>
+  The Calendar module also displays a birthday counter at the top of the monthly view. Click it to open the same birthday list without leaving your calendar.
+</Tip>
+
+## PDF export
+
+You can export member data as PDF in two ways:
+
+<CardGroup cols={2}>
+  <Card title="Individual member profile" icon="file-pdf" href="#">
+    Open a member's detail view and click **Exportar PDF** to download a formatted document with their full profile.
+  </Card>
+  <Card title="Filtered member list" icon="file-lines" href="#">
+    Apply any combination of filters, then open the export menu and click **Exportar lista (PDF)**. Choose which fields to include before downloading.
+  </Card>
+</CardGroup>
+
+Field selection lets you control exactly what appears in the exported list — you can include or exclude contact details, dates, congregation, role, and address fields to match your use case (sharing with elders, printing a directory, etc.).
+
+A CSV export of the filtered list is also available from the same export menu.
+
+## Member limit
+
+<Note>
+  Your subscription plan defines the maximum number of **active** members you can have at one time. The current count and your plan's limit are displayed in the app header so you always know where you stand. Inactive members do **not** count against your limit. Contact us to upgrade your plan if you need more capacity.
+</Note>

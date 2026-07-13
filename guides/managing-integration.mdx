@@ -1,0 +1,156 @@
+---
+title: "Managing Your Church's Integration Pipeline"
+sidebarTitle: "Integration Pipeline"
+description: "Learn how to add visitors to the integration pipeline, track their progress, assign mentors, and convert them to full members."
+---
+
+The Integration module is where visitors and candidates live before they become official church members. Think of it as a purposeful waiting room: each person (called an **integrante**) has a status, an expected congregation, and optionally a mentor who walks alongside them. When the time is right, you convert them to a full member with a single action — their record moves to the Members module and their journey continues there.
+
+<Note>
+  Integrantes do **not** count against your plan's member limit. Only active, converted members do.
+</Note>
+
+---
+
+## Adding a visitor (integrante)
+
+<Steps>
+  <Step title="Open the Integration module">
+    Click **Integração** in the left sidebar.
+  </Step>
+  <Step title="Start a new record">
+    Click **Adicionar integrante** in the top-right area.
+  </Step>
+  <Step title="Enter basic information">
+    Fill in the person's **name**, **date of birth**, and any available contact information (phone, WhatsApp, email).
+  </Step>
+  <Step title="Select the expected congregation">
+    Choose the **congregação esperada** — the congregation this person is expected to join. This is used for filtering and reporting.
+  </Step>
+  <Step title="Assign a mentor (optional)">
+    In the **Mentor** field, search for and select an existing church member who will accompany this person through the integration process. You can leave this empty and assign a mentor later.
+  </Step>
+  <Step title="Save">
+    Click **Salvar**. The integrante appears in the list with the status **Em andamento**.
+  </Step>
+</Steps>
+
+---
+
+## Tracking status
+
+Each integrante has one of three statuses that reflect where they are in the process:
+
+<CardGroup cols={3}>
+  <Card title="Em andamento" icon="circle-half-stroke">
+    The person is actively going through the integration process. This is the default status when a record is created.
+  </Card>
+  <Card title="Convertido" icon="circle-check">
+    The person has been converted to a full member. Their record moves to the Members module and their integrante record is archived as converted.
+  </Card>
+  <Card title="Descartado" icon="circle-xmark">
+    The person has stopped the process — they may have moved away, decided not to continue, or otherwise left. Use this status instead of deleting, so you retain a historical record.
+  </Card>
+</CardGroup>
+
+---
+
+## Updating status
+
+To change the status of an integrante (for example, to mark them as discarded):
+
+<Steps>
+  <Step title="Open the record">
+    Find the integrante in the list (use search or filters) and click on their row to open the record.
+  </Step>
+  <Step title="Edit the record">
+    Click **Editar** to enter edit mode.
+  </Step>
+  <Step title="Change the status">
+    Update the **Status** field to the appropriate value: **Em andamento**, or **Descartado**.
+  </Step>
+  <Step title="Save">
+    Click **Salvar** to apply the change.
+  </Step>
+</Steps>
+
+---
+
+## Assigning or changing a mentor
+
+Mentors are existing church members who guide integrantes through the process. You can assign or change a mentor at any time.
+
+<Steps>
+  <Step title="Open and edit the integrante">
+    Open the integrante's record and click **Editar**.
+  </Step>
+  <Step title="Update the mentor field">
+    In the **Mentor** field, search for and select the member you want to assign. To remove the current mentor, clear the field.
+  </Step>
+  <Step title="Save">
+    Click **Salvar**. The new mentor assignment takes effect immediately and is visible in the list and in filters.
+  </Step>
+</Steps>
+
+---
+
+## Converting an integrante to a member
+
+When someone completes the integration process and is ready to become an official church member, use the conversion flow to transfer their record.
+
+<Steps>
+  <Step title="Open the integrante's record">
+    Navigate to **Integração**, find the person, and open their record.
+  </Step>
+  <Step title="Click Convert">
+    Click **Converter para membro**. A member creation form will open, pre-populated with the data already on file for this integrante.
+  </Step>
+  <Step title="Complete any missing required fields">
+    Review the pre-filled information and add any required member fields that were not captured during integration (such as baptism date or role/cargo, if applicable).
+  </Step>
+  <Step title="Confirm">
+    Click **Salvar**. The person becomes a full, active member in the Members module. Their integrante record is marked as **Convertido** and is no longer listed as active in the integration pipeline.
+  </Step>
+</Steps>
+
+<Warning>
+  Check your plan's member limit before converting. Conversion counts the new member against your active member quota. If you are at the limit, the operation will be blocked until you free up a slot or upgrade your plan.
+</Warning>
+
+---
+
+## Filtering the integration list
+
+The integration list supports several filters to help you focus on the right people:
+
+<CardGroup cols={2}>
+  <Card title="Search by name" icon="magnifying-glass">
+    Type in the search bar to filter by the integrante's name.
+  </Card>
+  <Card title="Filter by status" icon="filter">
+    Show only **Em andamento**, **Convertido**, or **Descartado** records.
+  </Card>
+  <Card title="Filter by congregation" icon="church">
+    Narrow the list to a specific expected congregation.
+  </Card>
+  <Card title="Filter by mentor" icon="person">
+    See all integrantes assigned to a particular member-mentor.
+  </Card>
+</CardGroup>
+
+Active filter chips appear above the list — click the **×** on any chip to remove that filter.
+
+---
+
+## Exporting integration records
+
+You can export individual integrante records or the full filtered list as PDF files.
+
+- **Individual PDF**: Open an integrante's record and click the export/PDF button. The PDF downloads with all their information.
+- **List PDF**: Apply your desired filters to the integration list, then click **Exportar**. The PDF reflects exactly what is shown on screen.
+
+---
+
+<Tip>
+  You can let visitors register themselves directly into the integration pipeline using a **public integration link** — no Flock account required on their end. Share the link via WhatsApp, email, or as a QR code at your church entrance. See the [Public Links guide](/guides/public-links) for full details.
+</Tip>

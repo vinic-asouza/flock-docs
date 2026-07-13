@@ -1,0 +1,69 @@
+---
+title: "Audit Logs: Track All Actions in Your Church Account"
+sidebarTitle: "Audit Logs"
+description: "Review a complete history of actions performed in your church account, including who made changes and when."
+---
+
+Audit logs give you a complete, tamper-proof record of every important action performed in your Flock account. Any time a member is created or deleted, a congregation is edited, a user role changes, or any other significant operation occurs, Flock automatically creates a log entry. This gives church leadership full visibility and accountability over how the system is being used — and by whom.
+
+## Who Can View Audit Logs
+
+Only users with the **Owner** or **Admin** role can access audit logs. Editor and Reader users do not have access to this section.
+
+## Accessing Audit Logs
+
+Navigate to **Configurações** in the sidebar, then click the **Logs** tab at the top of the Settings page.
+
+## What Is Logged
+
+Flock records log entries for all of the following operations:
+
+| Entity | Logged Actions |
+|---|---|
+| **Members** | Created, updated (including field-level changes), activated, deactivated, deleted |
+| **Integrantes** | Created, updated, deleted, converted to member |
+| **Congregations** | Created, updated, deleted |
+| **Groups** | Created, updated, deleted |
+| **Calendar Events** | Created, updated, deleted |
+| **Church Profile** | Updated (name, CNPJ, address, contacts) |
+| **Account** | Email changed, password changed, account deleted |
+| **Team Users** | User added, role changed, user removed |
+
+## What Each Log Entry Shows
+
+Every log entry in Flock contains the following information:
+
+- **Entity type** — What was affected (e.g., Member, Congregation, Church)
+- **Action** — What happened (Created, Updated, Activated, Deactivated, Deleted)
+- **Record name** — The name or identifier of the affected record
+- **Timestamp** — The exact date and time the action was performed (displayed in Brazilian date/time format)
+- **Before & after values** — For update actions, Flock shows exactly which fields changed and what the old and new values were
+
+Click **Ver detalhes** on any log entry to expand it and see the full before/after comparison.
+
+## Filtering Logs
+
+You can narrow down the log history using the filter controls at the top of the Logs page:
+
+<CardGroup cols={2}>
+  <Card title="Filter by Entity" icon="layer-group">
+    Show only logs for a specific area of the system: Members, Church, Account, Congregations, Groups, Calendar, or Integração.
+  </Card>
+  <Card title="Filter by Action" icon="sliders">
+    Show only a specific type of action: Criação (create), Atualização (update), Ativação (activate), Inativação (deactivate), or Exclusão (delete).
+  </Card>
+</CardGroup>
+
+To reset to the full log view, set both filters back to "Todas" (all).
+
+## Pagination
+
+Audit logs are paginated — by default, 10 entries are shown per page. Use the **Anterior** and **Próximo** buttons at the bottom of the log list to navigate through older records. The page indicator shows your current position (e.g., "Página 2 de 14") and the total number of entries matching your current filter.
+
+<Tip>
+  Review your audit logs periodically — for example, once a week — to confirm that only authorized changes are being made to your member records and church data. This is especially useful if multiple staff members have Editor or Admin access.
+</Tip>
+
+<Note>
+  Audit log entries **cannot be edited or deleted** — not even by the Owner. This ensures the integrity of your activity history and provides a reliable trail for accountability purposes.
+</Note>

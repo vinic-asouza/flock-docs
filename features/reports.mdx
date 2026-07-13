@@ -1,0 +1,127 @@
+---
+title: "Analytics Dashboard: Insights About Your Church"
+sidebarTitle: "Reports"
+description: "Explore your church's demographics, membership trends, congregation structure, and temporal analytics with Flock's built-in dashboard."
+---
+
+The Analytics Dashboard gives you a full, living picture of your church's membership — who your people are, where they live, how your congregation has grown over time, and how members are distributed across your ministries and locations. Every chart and card pulls from your active member data in real time, so you're always looking at an up-to-date snapshot. Use the dashboard to prepare reports for leadership meetings, spot gaps in your pastoral care, or simply stay informed about the health of your church family.
+
+<Note>
+  By default, all reports and charts include only **active members**. Inactive members are excluded from every calculation shown on the dashboard.
+</Note>
+
+## Summary cards
+
+At the top of the dashboard, six summary cards give you your most important numbers at a glance:
+
+<CardGroup cols={3}>
+  <Card title="Total members" icon="users" href="#">
+    The total number of member records in scope (active + inactive combined).
+  </Card>
+  <Card title="Active members" icon="user-check" href="#">
+    Members currently marked as active.
+  </Card>
+  <Card title="Inactive members" icon="user-xmark" href="#">
+    Members currently marked as inactive.
+  </Card>
+  <Card title="% active" icon="chart-pie" href="#">
+    The percentage of your total membership that is currently active.
+  </Card>
+  <Card title="New members (30 days)" icon="user-plus" href="#">
+    Members whose admission date falls within the last 30 days.
+  </Card>
+  <Card title="Baptisms (30 days)" icon="droplet" href="#">
+    Members whose baptism date falls within the last 30 days.
+  </Card>
+</CardGroup>
+
+## Filter by congregation
+
+The dashboard supports a powerful scope filter at the top of the page:
+
+- **Todas** — shows data across your entire church, all congregations combined
+- **Sede** — shows data for your main headquarters congregation only
+- **Congregação específica** — select any individual branch to see its isolated analytics
+
+All charts, cards, and tables update instantly when you change the congregation scope. The PDF export also respects the active filter, so you can generate a report specific to one location.
+
+<Note>
+  If you select "Congregação" mode but do not choose a specific congregation, the PDF export will be blocked until you make a selection.
+</Note>
+
+## Demographics
+
+The Demographics section shows you the human makeup of your congregation through interactive charts and tables.
+
+<Accordion title="Gender distribution">
+  A **pie chart** and a **bar chart** showing the split between male (Masculino) and female (Feminino) members. The charts display both absolute counts and percentages.
+</Accordion>
+
+<Accordion title="Marital status distribution">
+  A breakdown of your membership by marital status: Solteiro, Casado, Divorciado, Viúvo, and Outro. Displayed as a pie chart with a data table alongside it.
+</Accordion>
+
+<Accordion title="Age groups">
+  Members are grouped into seven age bands:
+
+  | Age band | Label |
+  |---|---|
+  | 0 – 12 | Children |
+  | 13 – 17 | Teenagers |
+  | 18 – 25 | Young adults |
+  | 26 – 35 | Adults |
+  | 36 – 50 | Mid-life adults |
+  | 51 – 65 | Seniors |
+  | 65+ | Older seniors |
+
+  Age is calculated from the date of birth on each member's profile.
+</Accordion>
+
+<Accordion title="Geographic distribution">
+  A breakdown of your members by **state** (UF) and by **city**, showing where your congregation lives. Useful for understanding commute distances, identifying underserved neighbourhoods, and planning outreach.
+</Accordion>
+
+<Accordion title="Top 10 occupations">
+  A ranked table of the ten most common occupations declared across your active members. Useful for understanding the professional makeup of your congregation.
+</Accordion>
+
+## Church structure
+
+The Church Structure section shows how your members are organized internally.
+
+<Accordion title="Distribution by roles (cargos)">
+  A visual breakdown — pie chart and bar chart — of how many members hold each role (cargo). Examples: Diácono, Presbítero, Pastor, Membro, etc. This reflects the roles you've defined and assigned in the Members module.
+</Accordion>
+
+<Accordion title="Distribution by congregation">
+  A chart showing the active member count for each congregation, letting you compare the size of your sites at a glance.
+</Accordion>
+
+## Temporal analysis
+
+The Temporal Analysis section answers the question: *how has your church grown over time?* All charts in this section are **line charts** that show trends across years and months.
+
+<CardGroup cols={2}>
+  <Card title="Baptisms per year" icon="chart-line" href="#">
+    A line chart showing the number of baptisms recorded each calendar year, based on baptism dates in member profiles.
+  </Card>
+  <Card title="Baptisms per month" icon="chart-line" href="#">
+    A monthly view of baptisms within the current or selected year.
+  </Card>
+  <Card title="Admissions per year" icon="chart-line" href="#">
+    Annual admission (recebimento) counts showing the pace of new member reception over time.
+  </Card>
+  <Card title="Admissions per month" icon="chart-line" href="#">
+    A monthly breakdown of admissions for more granular trend analysis.
+  </Card>
+</CardGroup>
+
+In addition to member trends, the dashboard also shows the **integration timeline** — how many people entered and completed (or were discarded from) the integration pipeline over time.
+
+## Exporting the dashboard
+
+Click **Exportar PDF** in the dashboard header to download a full PDF snapshot of the current dashboard view. The export captures all visible cards, charts, and tables in the scope of your active congregation filter.
+
+<Tip>
+  For a congregation-level report, select the specific congregation from the filter before clicking Export. The PDF will be scoped exclusively to that congregation's data, making it suitable to share with that site's leadership team.
+</Tip>
