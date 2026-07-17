@@ -14,33 +14,48 @@ O Flock suporta múltiplos usuários trabalhando juntos na mesma conta de igreja
   </Card>
 
   <Card title="Administrador" icon="shield-halved">
-    Administradores têm acesso completo a todos os recursos, exceto gestão de cobrança. Podem convidar e gerenciar outros usuários (incluindo atribuir e remover os papéis de Administrador, Editor e Leitor), gerenciar membros, congregações, grupos e visualizar os logs de auditoria.
+    Administradores têm acesso completo aos recursos operacionais e à gestão da equipe (incluindo papéis e o **escopo por congregação**). Veem **todas** as congregações. Cobrança e exclusão da conta ficam com o Proprietário.
   </Card>
 
   <Card title="Editor" icon="pen-to-square">
-    Editores podem criar, editar e excluir membros, integrantes, congregações, grupos e eventos do calendário. Não podem convidar novos usuários, gerenciar a equipe, acessar cobrança ou ver logs de auditoria.
+    Editores podem criar, editar e excluir dados operacionais (membros, integração, grupos, calendário etc.) **somente nas congregações autorizadas**. Não gerenciam equipe, cobrança nem logs de auditoria. Só criam novas congregações se tiverem acesso a **todas**.
   </Card>
 
   <Card title="Leitor" icon="eye">
-    Leitores têm acesso somente leitura. Podem ver todos os dados — membros, congregações, relatórios, painel — mas não podem criar, editar ou excluir nada.
+    Leitores têm acesso somente leitura **nas congregações autorizadas**. Não podem criar, editar ou excluir nada.
   </Card>
 </CardGroup>
+
+## Acesso por congregação
+
+Além do papel, Editores e Leitores podem ser limitados a **uma, algumas ou todas** as congregações da igreja.
+
+| Quem | O que vê e altera |
+| --- | --- |
+| Proprietário e Administrador | Sempre **todas** as congregações (incluindo as criadas depois) |
+| Editor e Leitor | As congregações selecionadas **ou** a opção **Todas as congregações** (também dinâmica) |
+
+Na prática, listagens, filtros, cadastros, importação CSV, exportações e relatórios respeitam esse escopo. Eventos do calendário sem congregação vinculada continuam visíveis a quem tem acesso à igreja (abrangência geral).
 
 ## Permissões por papel
 
 | Ação | Proprietário | Administrador | Editor | Leitor |
 | --- | :-: | :-: | :-: | :-: |
-| Visualizar todos os dados | ✓ | ✓ | ✓ | ✓ |
-| Adicionar/editar/excluir membros | ✓ | ✓ | ✓ | ✗ |
-| Gerenciar integrantes | ✓ | ✓ | ✓ | ✗ |
-| Gerenciar congregações | ✓ | ✓ | ✓ | ✗ |
-| Gerenciar grupos | ✓ | ✓ | ✓ | ✗ |
-| Gerenciar eventos do calendário | ✓ | ✓ | ✓ | ✗ |
-| Convidar membros da equipe | ✓ | ✓ | ✗ | ✗ |
-| Editar/remover membros da equipe | ✓ | ✓ | ✗ | ✗ |
+| Visualizar dados (no escopo) | ✓ | ✓ | ✓\* | ✓\* |
+| Adicionar/editar/excluir membros | ✓ | ✓ | ✓\* | ✗ |
+| Gerenciar integrantes | ✓ | ✓ | ✓\* | ✗ |
+| Criar congregações | ✓ | ✓ | ✓\*\* | ✗ |
+| Editar/excluir congregações (no escopo) | ✓ | ✓ | ✓\* | ✗ |
+| Gerenciar grupos | ✓ | ✓ | ✓\* | ✗ |
+| Gerenciar eventos do calendário | ✓ | ✓ | ✓\* | ✗ |
+| Convidar / editar equipe e escopo | ✓ | ✓ | ✗ | ✗ |
 | Ver logs de auditoria | ✓ | ✓ | ✗ | ✗ |
 | Gerenciar assinatura e cobrança | ✓ | ✗ | ✗ | ✗ |
 | Excluir a conta da igreja | ✓ | ✗ | ✗ | ✗ |
+
+\* Limitado às congregações autorizadas (ou a todas, se essa opção estiver marcada).
+
+\*\* Somente se o Editor tiver acesso a **todas** as congregações.
 
 ## Convidando um membro da equipe
 
@@ -52,10 +67,13 @@ O Flock suporta múltiplos usuários trabalhando juntos na mesma conta de igreja
     No topo da página de Configurações, clique na aba **Usuários**. Esta seção só é visível para Proprietário e Administrador.
   </Step>
   <Step title="Adicione o usuário">
-    Clique em **Adicionar Usuário**. Informe o e-mail da pessoa e selecione o papel que deseja atribuir (Administrador, Editor ou Leitor).
+    Clique em **Novo usuário**. Informe o e-mail e selecione o papel (Administrador, Editor ou Leitor).
+  </Step>
+  <Step title="Defina o acesso às congregações">
+    Se o papel for **Editor** ou **Leitor**, escolha **Todas as congregações** ou marque uma ou mais congregações específicas. Sem essa seleção o convite não pode ser salvo. Administradores não precisam dessa escolha — sempre veem tudo.
   </Step>
   <Step title="Envie o convite">
-    Clique em **Salvar**. O Flock envia imediatamente um e-mail ao convidado informando que ele foi adicionado à sua conta de igreja no Flock. Se o e-mail ainda não tiver uma conta no Flock, uma será criada automaticamente — a pessoa define a própria senha no primeiro login.
+    Clique em **Adicionar usuário**. O Flock envia um e-mail ao convidado. Se o e-mail ainda não tiver conta no Flock, uma será criada automaticamente — a pessoa define a própria senha no primeiro login (ou por **Esqueci minha senha**).
   </Step>
 </Steps>
 
@@ -65,15 +83,17 @@ O Flock suporta múltiplos usuários trabalhando juntos na mesma conta de igreja
 
 ## Gerenciando membros da equipe existentes
 
-Na aba **Usuários** você vê todos os usuários vinculados à sua igreja, com o papel e o status. Proprietário e Administradores podem:
+Na aba **Usuários** você vê todos os usuários vinculados à sua igreja, com o papel, o status e o resumo das congregações (**Todas** ou a lista). Proprietário e Administradores podem:
 
-- **Alterar o papel de um usuário** — clique no ícone de edição ao lado da entrada e selecione o novo papel.
-- **Remover um usuário** — clique no ícone de remoção. A conta do usuário no Flock não é excluída; ele apenas perde acesso à sua igreja.
+- **Alterar o papel e o escopo** — clique em **Editar**, ajuste papel, status e congregações (obrigatório ao deixar alguém como Editor ou Leitor).
+- **Promover para Administrador** — as restrições de congregação são removidas automaticamente.
+- **Rebaixar de Administrador para Editor/Leitor** — é preciso escolher congregações (ou Todas) antes de salvar.
+- **Remover um usuário** — a conta no Flock não é excluída; ele apenas perde acesso à sua igreja.
 
 <Note>
-  O papel de Proprietário não pode ser editado ou removido pela tela de Usuários. Ações realizadas por membros da equipe em membros, congregações e outros registros ficam automaticamente registradas nos **Logs de auditoria**.
+  O papel de Proprietário não pode ser editado ou removido pela tela de Usuários. Ações da equipe ficam registradas nos **Logs de auditoria**.
 </Note>
 
 <Tip>
-  Dê ao secretário da igreja ou à equipe administrativa o papel de **Editor**. Eles conseguirão gerenciar todos os cadastros, congregações e grupos sem ter acesso a cobrança ou controles sensíveis da conta.
+  Para um secretário de uma filial, use **Editor** com acesso só à congregação dela. Para quem precisa operar a igreja inteira sem ver cobrança, use **Editor** com **Todas as congregações**.
 </Tip>
