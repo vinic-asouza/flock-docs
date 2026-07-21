@@ -1,69 +1,71 @@
 ---
-title: "Logs de auditoria: acompanhe todas as ações na conta da igreja"
-sidebarTitle: "Logs de auditoria"
-description: "Revise um histórico completo de todas as ações importantes realizadas na sua conta da igreja no Flock — quem fez, o que mudou e quando aconteceu."
+title: "Histórico de atividades: acompanhe o que mudou na igreja"
+sidebarTitle: "Histórico de atividades"
+description: "Veja, em linguagem simples, quem alterou o quê e quando — na aba Histórico das Configurações do Flock (Proprietário e Administrador)."
 ---
 
-Os logs de auditoria dão a você um registro completo e à prova de alteração de todas as ações importantes realizadas na sua conta do Flock. Sempre que um membro é criado ou excluído, uma congregação é editada, o papel de um usuário muda, ou qualquer outra operação relevante ocorre, o Flock cria automaticamente uma entrada de log. Isso dá total visibilidade e responsabilidade à liderança sobre como o sistema é utilizado — e por quem.
+O **Histórico de atividades** mostra, de forma simples, o que foi alterado na conta da igreja e **quem** fez cada ação. A lista é compacta e pensada para a liderança acompanhar o dia a dia — sem códigos técnicos, JSON ou identificadores internos.
 
-## Quem pode ver os logs
+## Quem pode ver
 
-Apenas usuários com o papel de **Proprietário** ou **Administrador** têm acesso aos logs de auditoria. Editores e Leitores não têm acesso a esta seção.
+Apenas usuários com o papel de **Proprietário** ou **Administrador**. Editores e Leitores não veem esta seção.
 
-## Acessando os logs
+## Como acessar
 
-Vá em **Configurações** na barra lateral e clique na aba **Logs** no topo da página de Configurações.
+1. Abra **Configurações** na barra lateral.
+2. Clique na aba **Histórico** no topo da página.
 
-## O que é registrado
+## O que aparece em cada atividade
 
-O Flock registra entradas de log para todas as operações a seguir:
+Cada item da lista mostra:
 
-| Entidade | Ações registradas |
+- **O que aconteceu** — por exemplo, “Atualizou membro “Maria Silva”” ou “Importou uma lista de membros”
+- **Quem fez** — nome ou e-mail da pessoa que realizou a ação
+- **Quando** — data e hora no formato brasileiro
+
+Clique em **Detalhes** para ver os campos alterados com valores **antes → depois**, em português.
+
+<Note>
+  A geração de **relatórios** do painel **não** cria entrada neste histórico. Importação e exportação de lista de membros aparecem como uma atividade genérica (“Importou/Exportou uma lista de membros”).
+</Note>
+
+## Tipos de atividades registradas
+
+| Área | Exemplos de ações |
 | --- | --- |
-| **Membros** | Criados, atualizados (incluindo mudanças em nível de campo), ativados, desativados, excluídos |
-| **Integrantes** | Criados, atualizados, excluídos, convertidos em membro |
-| **Congregações** | Criadas, atualizadas, excluídas |
-| **Grupos** | Criados, atualizados, excluídos |
-| **Eventos do calendário** | Criados, atualizados, excluídos |
-| **Perfil da igreja** | Atualizado (nome, CNPJ, endereço, contatos) |
-| **Conta** | E-mail alterado, senha alterada, conta excluída |
+| **Membros** | Criação, atualização, ativação, inativação, exclusão |
+| **Integração** | Criação, atualização, exclusão, conversão em membro |
+| **Congregações** | Criação, atualização, exclusão |
+| **Grupos** | Criação, atualização, exclusão |
+| **Calendário** | Criação, atualização, exclusão de eventos |
+| **Igreja** | Atualização do perfil (nome, endereço, contatos etc.) |
+| **Conta** | Alteração de e-mail, senha ou exclusão de conta |
+| **Listas** | Importação ou exportação de lista de membros |
 
-## O que cada entrada mostra
+## Filtros
 
-Toda entrada de log no Flock contém:
-
-- **Tipo de entidade** — o que foi afetado (ex.: Membro, Congregação, Igreja)
-- **Ação** — o que aconteceu (Criação, Atualização, Ativação, Desativação, Exclusão)
-- **Nome do registro** — nome ou identificador do registro afetado
-- **Data e hora** — momento exato em que a ação foi realizada (no formato brasileiro)
-- **Valores antes e depois** — para atualizações, o Flock mostra exatamente quais campos mudaram, com os valores antigos e novos
-
-Clique em **Ver detalhes** em qualquer entrada para expandir e ver a comparação completa.
-
-## Filtrando os logs
-
-Você pode restringir o histórico usando os filtros no topo da página de Logs:
+No topo da lista você pode filtrar por:
 
 <CardGroup cols={2}>
-  <Card title="Filtrar por entidade" icon="layer-group">
-    Mostrar apenas logs de uma área do sistema: Membros, Igreja, Conta, Congregações, Grupos, Calendário ou Integração.
+  <Card title="Tipo de registro" icon="layer-group">
+    Membros, Igreja, Conta, Congregações, Grupos, Calendário ou Integração.
   </Card>
 
-  <Card title="Filtrar por ação" icon="sliders">
-    Mostrar apenas um tipo de ação: Criação, Atualização, Ativação, Inativação ou Exclusão.
+  <Card title="Ação" icon="sliders">
+    Criação, Atualização, Ativação, Inativação, Exclusão, Importação ou Exportação.
   </Card>
 </CardGroup>
 
-Para voltar à visão completa, defina os dois filtros como "Todas".
+Para ver tudo de novo, escolha **Todos os tipos** e **Todas as ações**.
 
 ## Paginação
 
-Os logs são paginados — por padrão, 10 entradas por página. Use os botões **Anterior** e **Próximo** no fim da lista para navegar por registros mais antigos. O indicador mostra sua posição atual (por exemplo, "Página 2 de 14") e o total de entradas que correspondem ao filtro atual.
+Por padrão aparecem 10 atividades por página. Use **Anterior** e **Próximo** para navegar. Enquanto a próxima página carrega, um indicador de carregamento aparece na lista.
 
 <Tip>
-  Revise seus logs de auditoria periodicamente — por exemplo, uma vez por semana — para confirmar que só alterações autorizadas estão sendo feitas nos registros da igreja. Isso é especialmente útil se vários colaboradores têm acesso de Editor ou Administrador.
+  Vale revisar o histórico de tempos em tempos — por exemplo, semanalmente — especialmente se várias pessoas têm acesso de Editor ou Administrador.
 </Tip>
 
 <Note>
-  Entradas de log **não podem ser editadas nem excluídas** — nem mesmo pelo Proprietário. Isso garante a integridade do histórico de atividades e oferece uma trilha confiável de auditoria.
+  As atividades **não podem ser editadas nem apagadas**, nem mesmo pelo Proprietário. Isso preserva a integridade do histórico.
 </Note>
