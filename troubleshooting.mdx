@@ -1,7 +1,7 @@
 ---
 title: "Solução de problemas comuns no Flock — gestão de igrejas"
 sidebarTitle: "Solução de problemas"
-description: "Soluções passo a passo para problemas comuns no Flock: falhas de login, e-mails de confirmação ausentes, limite de membros, erros de importação CSV e mais."
+description: "Soluções passo a passo para problemas comuns no Flock: falhas de login, e-mails ausentes, limite de membros, edição de membro sem salvar, erros de importação CSV e mais."
 ---
 
 A maioria dos problemas no Flock tem uma solução direta. Esta página cobre as principais dificuldades relatadas por administradores de igreja, com soluções passo a passo. Percorra a seção correspondente e, se o problema persistir, fale com o suporte no final da página.
@@ -26,6 +26,17 @@ A maioria dos problemas no Flock tem uma solução direta. Esta página cobre as
     4. **Aguarde alguns minutos.** Ocasionalmente, a entrega de e-mails atrasa por causa das filas dos servidores de e-mail.
 
     Se nada funcionar, entre em contato com o suporte informando o e-mail usado no cadastro.
+  </Accordion>
+
+  <Accordion title="Ao editar um membro, clicar em Salvar parece não fazer nada">
+    Se você abre **Editar Membro**, altera algo e clica em **Salvar Alterações** sem ver confirmação nem fechamento do modal, em geral a validação do formulário impediu o envio:
+
+    1. **Procure a mensagem vermelha** perto dos botões Cancelar / Salvar Alterações — ela lista o que precisa ser corrigido.
+    2. **Role o formulário** até o campo destacado (endereço, data de recebimento, congregação, etc.). Cadastros antigos às vezes têm campos obrigatórios vazios.
+    3. Corrija os campos e clique em **Salvar Alterações** de novo. Em sucesso, aparece um aviso de confirmação e o modal fecha.
+    4. Se a mensagem falar de **e-mail já cadastrado**, use outro e-mail ou remova o e-mail do cadastro duplicado.
+
+    Papel **Leitor** não edita membros — nesse caso o botão Editar fica indisponível. Peça a um Editor ou Administrador para fazer a alteração.
   </Accordion>
 
   <Accordion title="Não consigo adicionar mais membros">
