@@ -4,7 +4,11 @@ sidebarTitle: "Assinatura"
 description: "Faça upgrade ou downgrade do plano, veja faturas, atualize dados de pagamento e entenda como o limite de membros afeta a assinatura."
 ---
 
-O Flock usa o **Stripe** para processamento seguro de pagamentos, então seus dados financeiros nunca são armazenados diretamente no Flock. Todas as ações de cobrança — upgrade, downgrade, ver faturas e atualizar cartão de crédito — são feitas em **Configurações → Plano**. Apenas o **Proprietário** da conta pode acessar as configurações de cobrança.
+O Flock usa o **Stripe** para processamento seguro de pagamentos, então seus dados financeiros nunca são armazenados diretamente no Flock. Todas as ações de cobrança — upgrade, downgrade, ver faturas e atualizar cartão de crédito — são feitas em **Configurações → Plano**. Apenas o **Proprietário** ou um **Administrador** da conta podem acessar as configurações de cobrança.
+
+<Tip>
+  No celular, abra **Configurações** pelo menu ☰ e deslize até a aba **Plano**. Os botões (**Gerenciar Assinatura**, **Trocar de Plano**, **Sincronizar**) ficam um abaixo do outro. Ao trocar de plano, role a lista; **Continuar** e **Confirmar Troca** ficam fixos na base do painel.
+</Tip>
 
 ## Planos disponíveis
 
@@ -30,16 +34,16 @@ Ao abrir **Configurações → Plano**, você vê um cartão-resumo com:
 
 <Steps>
   <Step title="Vá em Configurações → Plano">
-    Clique em **Configurações** na barra lateral e selecione a aba **Plano**.
+    No computador, clique em **Configurações** na barra lateral e selecione a aba **Plano**. No celular, toque no menu ☰ → **Configurações** e deslize até a aba **Plano**.
   </Step>
   <Step title="Clique em Trocar de Plano">
     Clique no botão **Trocar de Plano**. Este botão só está ativo quando sua assinatura está no estado Ativo.
   </Step>
   <Step title="Selecione o novo plano">
-    Uma janela abrirá listando todos os planos disponíveis. Clique no plano para o qual deseja fazer upgrade. Seu plano atual estará marcado e não poderá ser selecionado.
+    Uma janela abrirá listando todos os planos disponíveis. Clique no plano para o qual deseja fazer upgrade. Seu plano atual estará marcado e não poderá ser selecionado. No celular, role a lista; **Continuar** fica fixo na base do painel.
   </Step>
   <Step title="Confirme a alteração">
-    Revise a tela de confirmação mostrando seu plano atual e o novo plano, e clique em **Confirmar Troca**.
+    Revise a tela de confirmação mostrando seu plano atual e o novo plano, e clique em **Confirmar Troca**. No celular, esse botão fica fixo na base do painel.
   </Step>
   <Step title="A mudança tem efeito imediato">
     O novo limite de membros é ativado na hora. O Stripe calcula uma cobrança proporcional pelos dias restantes do período de cobrança atual e a aplica na próxima fatura.
@@ -66,7 +70,7 @@ Para abrir o portal:
 
 <Steps>
   <Step title="Vá em Configurações → Plano">
-    Clique em **Configurações** na barra lateral e selecione a aba **Plano**.
+    No computador, clique em **Configurações** na barra lateral e selecione a aba **Plano**. No celular, toque no menu ☰ → **Configurações** e deslize até a aba **Plano**.
   </Step>
   <Step title="Clique em Gerenciar Assinatura">
     Clique no botão **Gerenciar Assinatura**. O portal do Stripe abrirá em uma nova aba.
@@ -104,5 +108,5 @@ Para cancelar, abra o **Portal de Cobrança do Stripe** (via **Gerenciar Assinat
 Se o pagamento falhar, sua assinatura entra no estado **Em atraso**. Você verá um alerta em destaque na página **Plano** pedindo para atualizar o método de pagamento. Novos membros não podem ser adicionados enquanto o pagamento estiver atrasado. Clique em **Atualizar pagamento** no alerta para abrir o portal do Stripe e resolver.
 
 <Note>
-  Apenas o **Proprietário** da conta pode ver ou gerenciar cobrança, assinatura e configurações de pagamento. Usuários Administradores, Editores e Leitores não veem a aba **Plano** em Configurações.
+  Apenas o **Proprietário** ou um **Administrador** da conta podem ver ou gerenciar cobrança, assinatura e configurações de pagamento. Usuários **Editores** e **Leitores** não veem a aba **Plano** em Configurações.
 </Note>
