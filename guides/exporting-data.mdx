@@ -4,7 +4,7 @@ sidebarTitle: "Exportar dados"
 description: "Exporte a lista de membros em PDF ou CSV; perfis, grupos, integração, painel e calendário saem em PDF."
 ---
 
-O Flock permite exportar seus dados para uso offline, compartilhar com a liderança, imprimir ou distribuir registros sem dar acesso ao sistema. Os arquivos são gerados no servidor a partir dos mesmos dados que você vê na tela — o que você filtra é exatamente o que sai.
+O Flock permite exportar seus dados para uso offline, compartilhar com a liderança, imprimir ou distribuir registros sem dar acesso ao sistema. Os arquivos são gerados no servidor. Na maioria dos módulos, o que você filtra na tela é o que sai. No **Calendário**, o recorte do PDF (tipos, congregação e grupo) é escolhido no painel ao confirmar e **não altera** a listagem.
 
 **CSV** existe só para a **lista de membros**. Perfis, grupos, integração, congregações, painel e calendário saem em **PDF**.
 
@@ -42,7 +42,7 @@ O Flock permite exportar seus dados para uso offline, compartilhar com a lideran
   </Card>
 
   <Card title="Calendário (PDF)" icon="calendar">
-    Exportação da visão atual do calendário para imprimir ou consultar offline.
+    Agenda do mês ou do ano. O recorte (tipos, congregação e grupo) é escolhido no painel ao confirmar e não muda a listagem.
   </Card>
 
   <Card title="Lista de congregações" icon="church">
@@ -151,16 +151,23 @@ Você pode baixar a lista como **PDF** ou **CSV**. Os dois usam os filtros da te
 ## Exportando o calendário
 
 <Steps>
-  <Step title="Vá à seção Calendário">
-    Clique em **Calendário** na barra lateral esquerda (no celular: menu ☰ → **Calendário**).
+  <Step title="Vá ao Calendário">
+    Clique em **Calendário** na barra lateral (no celular: menu ☰ → **Calendário**).
   </Step>
-  <Step title="Ajuste filtros e período">
-    Aplique congregação e/ou grupo se quiser. Na aba **Calendário**, navegue até o mês desejado; na aba **Listas**, escolha o ano com as setas.
+  <Step title="Escolha o período">
+    Para o **mês**, use o botão de PDF ao lado das setas (aba **Calendário**) ou no cabeçalho daquele mês (aba **Listas**). Para o **ano inteiro**, use **Exportar PDF** no topo da página, em qualquer aba.
   </Step>
-  <Step title="Clique em Exportar PDF">
-    No topo da página, clique em **Exportar PDF**. O download usa o mês da aba Calendário ou o ano da aba Listas, com os filtros ativos.
+  <Step title="Ajuste o recorte no painel">
+    Confirme tipos, congregação e grupo. O recorte vale só para este arquivo e não altera os filtros da listagem. Nenhum tipo marcado inclui todos os tipos.
+  </Step>
+  <Step title="Baixar PDF">
+    Clique em **Baixar PDF**. O navegador baixa `calendario-AAAA-MM.pdf` (mês) ou `calendario-AAAA.pdf` (ano).
   </Step>
 </Steps>
+
+<Note>
+  **Leitor** (e papéis acima) pode exportar. Se o período não tiver eventos no recorte escolhido, o PDF baixa mesmo assim e informa que não há itens.
+</Note>
 
 <Tip>
   Veja também a página [Calendário](/features/calendar) para criar eventos, recorrência e participantes.
