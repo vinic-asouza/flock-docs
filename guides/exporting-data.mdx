@@ -1,10 +1,10 @@
 ---
 title: "Como exportar dados de membros, grupos e integração do Flock"
 sidebarTitle: "Exportar dados"
-description: "Exporte a lista de membros em PDF ou CSV; perfis, grupos, integração, painel e calendário saem em PDF."
+description: "Exporte a lista de membros em PDF ou CSV; perfis, grupos, congregações (lista e rol da unidade), integração, painel e calendário saem em PDF."
 ---
 
-O Flock permite exportar seus dados para uso offline, compartilhar com a liderança, imprimir ou distribuir registros sem dar acesso ao sistema. Os arquivos são gerados no servidor. Na maioria dos módulos, o que você filtra na tela é o que sai. No **Calendário**, o recorte do PDF (tipos, congregação e grupo) é escolhido no painel ao confirmar e **não altera** a listagem.
+O Flock permite exportar seus dados para uso offline, compartilhar com a liderança, imprimir ou distribuir registros sem dar acesso ao sistema. Os arquivos são gerados no servidor. Na maioria dos módulos, o que você filtra na tela é o que sai. Exceções: no **Calendário**, o recorte do PDF (tipos, congregação e grupo) é escolhido no painel ao confirmar e **não altera** a listagem; no modal de uma **congregação**, a busca de membros **não** entra no PDF do rol — o arquivo traz todos os ativos daquela unidade.
 
 **CSV** existe só para a **lista de membros**. Perfis, grupos, integração, congregações, painel e calendário saem em **PDF**.
 
@@ -47,6 +47,10 @@ O Flock permite exportar seus dados para uso offline, compartilhar com a lideran
 
   <Card title="Lista de congregações" icon="church">
     Exporte a lista de congregações com seus detalhes.
+  </Card>
+
+  <Card title="Membros de uma congregação (PDF)" icon="users">
+    Rol de membros ativos da unidade aberta no modal, com seleção de campos. Distinto do PDF da lista de congregações.
   </Card>
 
   <Card title="Lista de grupos (PDF)" icon="people-group">
@@ -172,6 +176,31 @@ Você pode baixar a lista como **PDF** ou **CSV**. Os dois usam os filtros da te
 <Tip>
   Veja também a página [Calendário](/features/calendar) para criar eventos, recorrência e participantes.
 </Tip>
+
+---
+
+## Exportando o rol de uma congregação
+
+Use isto quando precisar da lista de **membros ativos de uma unidade**, não da lista de congregações.
+
+<Steps>
+  <Step title="Abra Congregações">
+    Clique em **Congregações** na barra lateral (no celular: menu ☰ → **Congregações**).
+  </Step>
+  <Step title="Abra a congregação">
+    Clique no cartão da unidade. O botão de membros **não** fica no cartão da listagem.
+  </Step>
+  <Step title="Clique em Exportar lista">
+    No computador, o botão fica no painel da congregação; no celular, na base do painel. **Leitor** (e papéis acima) pode exportar. Sem membros ativos, o botão fica desabilitado.
+  </Step>
+  <Step title="Escolha os campos e baixe">
+    Nome, telefone e e-mail já vêm marcados. Confirme **Exportar PDF**. O arquivo inclui todos os ativos da unidade — a busca do modal não reduz o conjunto. O PDF usa o nome completo da congregação.
+  </Step>
+</Steps>
+
+<Note>
+  **Exportar PDF** na barra de resumo continua gerando a **lista de congregações**. Para o rol de membros, use **Exportar lista** no modal. Detalhes na página [Congregações](/features/congregations).
+</Note>
 
 ---
 
