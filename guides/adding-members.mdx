@@ -124,25 +124,41 @@ Para excluir, abra o cadastro e selecione a opção de exclusão. Uma confirmaç
 
 ## Importando membros por CSV
 
-Se você está migrando de outro sistema ou tem uma planilha de membros pronta, é possível importar tudo de uma vez.
+Se você está migrando de outro sistema ou tem uma planilha pronta, dá para importar vários membros de uma vez. Só **Editor** (e papéis acima) podem importar; **Leitor** não vê essa ação.
 
 <Steps>
   <Step title="Abra o diálogo de importação">
-    Na lista de Membros, clique no **ícone de importação** (seta para cima) ou na opção **Importar** para abrir o diálogo de importação por CSV.
+    Na lista de Membros, clique no **ícone de importação** (seta para cima) ou em **Importar**.
+  </Step>
+  <Step title="Escolha a congregação">
+    Selecione a congregação no próprio diálogo. **Todos** os membros do arquivo serão vinculados a ela. Uma coluna Congregação no CSV **não** define a congregação.
+  </Step>
+  <Step title="Baixe o modelo (recomendado)">
+    Clique em **Baixar modelo CSV**. Ele traz as colunas do cadastro atual — incluindo **Natural de**, **Data do Casamento**, **Número** do endereço e se **cônjuge/pai/mãe é membro** — e uma linha de exemplo.
   </Step>
   <Step title="Envie seu arquivo">
-    Selecione o arquivo `.csv` (máximo **10 MB**). O sistema valida assim que o arquivo é enviado — verifica estrutura de colunas, campos obrigatórios e formatos de dados antes de criar qualquer cadastro.
+    Selecione o arquivo `.csv` (máximo **10 MB**). O sistema valida assim que o arquivo é enviado — verifica colunas, campos obrigatórios e formatos antes de criar qualquer cadastro.
   </Step>
-  <Step title="Revise os resultados da validação">
-    O Flock mostra uma prévia da importação com erros e avisos destacados. Corrija as questões na planilha, faça novo upload e repita até que a validação passe sem erros.
+  <Step title="Revise a validação">
+    O Flock mostra uma prévia com erros e avisos. Corrija na planilha, envie de novo e repita até a validação passar.
   </Step>
   <Step title="Confirme a importação">
-    Clique em **Confirmar** para prosseguir. Os membros são criados em lote. Ao final, você vê um resumo indicando quantos cadastros foram importados com sucesso.
+    Clique em **Confirmar**. Os membros são criados em lote. Ao final, você vê quantos cadastros foram importados.
   </Step>
 </Steps>
 
 <Note>
-  A importação respeita o limite de membros do seu plano. Se importar exceder o limite, a operação será bloqueada. Desative membros que não estão em uso ou faça upgrade do plano antes de importar.
+  Campos obrigatórios no CSV: **Nome**, **Data de Nascimento**, **Gênero**, **Estado Civil**, **Endereço**, **Cidade**, **Estado**, **Tipo de Recebimento** e **Data de Recebimento**. Datas no formato brasileiro `DD/MM/AAAA`.
+
+  O arquivo cobre dados pessoais, família, contato, endereço e recebimento. O **questionário eclesiástico** (frequência, tipo de batismo etc.) **não** entra no CSV.
+
+  Planilhas antigas ainda podem ter **Nacionalidade**, **CPF/Documento** e **Data de Batismo** — o modelo deixa essas colunas no **final**, só para migração.
+
+  Se você reimportar um arquivo exportado da lista, as colunas **Idade**, **Status** e **Congregação** são ignoradas.
+</Note>
+
+<Note>
+  A importação respeita o limite de membros do seu plano. Se importar exceder o limite, a operação é bloqueada. Desative membros que não estão em uso ou faça upgrade do plano antes de importar.
 </Note>
 
 ---
