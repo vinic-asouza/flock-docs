@@ -98,11 +98,14 @@ Se precisar cadastrar vários membros novos de uma vez — por exemplo, após um
 
 ## Importação por CSV
 
-Para migrações maiores, o Flock permite importar membros a partir de um arquivo CSV:
+Para migrações maiores, o Flock permite importar membros a partir de um arquivo CSV (papel **Editor** ou superior):
 
 <Steps>
   <Step title="Prepare seu CSV">
-    Formate sua planilha com a ordem de colunas esperada pelo Flock. Baixe o modelo do diálogo de importação se precisar de um ponto de partida.
+    Baixe o **modelo** no diálogo de importação. As colunas seguem o cadastro atual: pessoais, família (incluindo se cônjuge/pai/mãe é membro), contato, endereço e recebimento. O questionário eclesiástico não entra no arquivo.
+  </Step>
+  <Step title="Escolha a congregação">
+    No diálogo, selecione a congregação. Ela vale para **todas** as linhas. Colunas Idade, Status e Congregação de um CSV exportado são ignoradas.
   </Step>
   <Step title="Envie e valide">
     Clique no ícone de importação (seta para cima) no cabeçalho de Membros. Selecione seu arquivo `.csv` (máximo 10 MB). O Flock valida o arquivo e mostra uma prévia com quaisquer erros destacados.
@@ -116,6 +119,8 @@ Para migrações maiores, o Flock permite importar membros a partir de um arquiv
 </Steps>
 
 <Note>
+  Planilhas antigas podem trazer **Nacionalidade**, **CPF/Documento** e **Data de Batismo** — o modelo deixa essas colunas no final só para migração.
+
   A importação respeita o limite de membros do seu plano. Se o arquivo ultrapassar o limite, a importação é bloqueada e você verá uma mensagem indicando quantos slots estão disponíveis.
 </Note>
 
@@ -149,9 +154,9 @@ Você pode exportar os dados de membros em PDF de três formas:
   A **Ficha de Cadastro** é um template genérico da sua igreja — ela não pré-preenche dados de um membro existente. Use-a para coletar informações no papel e cadastrar depois no sistema.
 </Note>
 
-A seleção de campos permite controlar exatamente o que aparece na lista exportada — você inclui ou exclui contato, datas, congregação, cargo e endereço conforme o uso (compartilhar com os presbíteros, imprimir um diretório, etc.).
+A seleção de campos permite controlar exatamente o que aparece na lista exportada — você inclui ou exclui contato, datas, congregação, endereço e se cônjuge/pai/mãe é membro, conforme o uso (compartilhar com os presbíteros, imprimir um diretório, etc.).
 
-Uma exportação em CSV da lista filtrada também está disponível no mesmo menu.
+No mesmo menu há **Exportar Lista de Membros (CSV)**. No CSV você escolhe as mesmas colunas operacionais (incluindo as flags de família). Não há documento, data de batismo nem o questionário eclesiástico. Só a lista de membros tem CSV; grupos, integração, congregações e calendário saem em PDF.
 
 ## Limite de membros
 

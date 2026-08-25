@@ -1,10 +1,12 @@
 ---
 title: "Como exportar dados de membros, grupos e integração do Flock"
 sidebarTitle: "Exportar dados"
-description: "Exporte perfis, listas, grupos, integração, painel e o calendário (mês ou ano) como PDF ou CSV no Flock."
+description: "Exporte a lista de membros em PDF ou CSV; perfis, grupos, integração, painel e calendário saem em PDF."
 ---
 
-O Flock permite exportar seus dados em relatórios PDF para uso offline, compartilhar com a liderança da igreja, imprimir para arquivamento ou distribuir registros sem dar acesso ao sistema. Os arquivos são gerados no servidor a partir dos mesmos dados que você vê na tela — o que você filtra é exatamente o que sai.
+O Flock permite exportar seus dados para uso offline, compartilhar com a liderança, imprimir ou distribuir registros sem dar acesso ao sistema. Os arquivos são gerados no servidor a partir dos mesmos dados que você vê na tela — o que você filtra é exatamente o que sai.
+
+**CSV** existe só para a **lista de membros**. Perfis, grupos, integração, congregações, painel e calendário saem em **PDF**.
 
 ---
 
@@ -24,7 +26,7 @@ O Flock permite exportar seus dados em relatórios PDF para uso offline, compart
   </Card>
 
   <Card title="Lista de membros (CSV)" icon="table">
-    Uma exportação CSV compatível com planilhas da lista filtrada, útil para tratamento adicional dos dados.
+    Planilha da lista filtrada, com as colunas que você marcar (incluindo se cônjuge/pai/mãe é membro). Útil para tratar os dados fora do Flock ou reimportar os campos de cadastro.
   </Card>
 
   <Card title="Integrante individual (PDF)" icon="person-walking-arrow-right">
@@ -100,24 +102,30 @@ Use a ficha quando precisar imprimir formulários para cultos, visitas ou cadast
 
 ## Exportando uma lista filtrada de membros
 
+Você pode baixar a lista como **PDF** ou **CSV**. Os dois usam os filtros da tela e deixam você escolher as colunas.
+
 <Steps>
   <Step title="Aplique seus filtros">
-    No módulo Membros, use a busca e os filtros para restringir a lista às pessoas que quer incluir. Por exemplo, filtre por congregação, status ou faixa etária. Se quiser exportar todos, deixe os filtros limpos.
+    No módulo Membros, use a busca e os filtros para restringir a lista. Se quiser exportar todos, deixe os filtros limpos.
   </Step>
-  <Step title="Abra o diálogo de exportação">
-    Clique em **Exportar** ou no botão de exportação em PDF da barra de ferramentas da lista de membros. Uma janela de opções de exportação abrirá.
+  <Step title="Abra PDF ou CSV">
+    Na barra da lista, abra **Exportar lista (PDF)** ou **Exportar Lista de Membros (CSV)**.
   </Step>
-  <Step title="Selecione os campos a incluir">
-    Escolha as colunas que aparecerão no PDF. Você pode incluir ou excluir campos como contato, datas, endereço, estado civil e mais.
+  <Step title="Selecione os campos">
+    Marque as colunas do cadastro operacional: pessoais, família (incluindo **Cônjuge é membro**, **Pai é membro** e **Mãe é membro**), contato, endereço e recebimento. Não há documento, data de batismo nem o questionário eclesiástico.
   </Step>
-  <Step title="Baixe o PDF">
-    Confirme a exportação. O Flock gera o PDF no servidor e o navegador baixa. Você também pode exportar a mesma lista filtrada como um **arquivo CSV** usando a opção CSV no mesmo diálogo.
+  <Step title="Baixe o arquivo">
+    Confirme. O navegador baixa o PDF ou o CSV (com BOM UTF-8, para acentos no Excel).
   </Step>
 </Steps>
 
 <Tip>
-  Use a seleção de campos para manter informações sensíveis — como telefones ou endereços residenciais — fora de relatórios que serão compartilhados amplamente. Exporte uma versão apenas com nome e congregação para o mural, e uma versão completa para a equipe pastoral.
+  Use a seleção de campos para manter informações sensíveis — como telefones ou endereços — fora de relatórios que serão compartilhados amplamente. Exporte uma versão só com nome e congregação para o mural, e uma versão completa para a equipe pastoral.
 </Tip>
+
+<Note>
+  Qualquer **Leitor** (ou papel acima) pode exportar. Se você reimportar o CSV, escolha a congregação no diálogo de importação: as colunas **Idade**, **Status** e **Congregação** do arquivo são ignoradas. Os demais cabeçalhos oficiais do export voltam a mapear no import.
+</Note>
 
 ---
 

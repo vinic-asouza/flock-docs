@@ -59,14 +59,18 @@ Aqui você encontra as respostas para as perguntas mais comuns dos administrador
   </Accordion>
 
   <Accordion title="Como importo membros que já tenho?">
-    O Flock suporta importação por CSV para ajudar a migrar seus registros existentes. Para importar:
+    O Flock importa membros por CSV. Só **Editor** (e papéis acima) podem importar.
 
     1. Vá em **Membros** na barra lateral.
-    2. Procure a opção **Importar**.
-    3. Envie seu arquivo CSV. O Flock roda uma **etapa de validação** primeiro, apontando linhas com erros (como campos obrigatórios ausentes ou formatos de data incorretos) antes de importar qualquer dado.
-    4. Revise os resultados, corrija se necessário e confirme a importação.
+    2. Abra **Importar**.
+    3. Selecione a **congregação** no diálogo (vale para todas as linhas).
+    4. Baixe o **modelo CSV** se ainda não tiver as colunas do cadastro atual (incluindo Natural de, Data do Casamento, Número e se cônjuge/pai/mãe é membro).
+    5. Envie o arquivo. O Flock **valida** antes de criar cadastros e aponta linhas com erro.
+    6. Corrija se necessário e confirme a importação.
 
-    O campo obrigatório em cada linha é o **nome**. Datas devem estar no formato brasileiro (DD/MM/AAAA). Duplicados (com base em correspondência com registros já existentes) serão apontados na validação.
+    Campos obrigatórios: **Nome**, **Data de Nascimento**, **Gênero**, **Estado Civil**, **Endereço**, **Cidade**, **Estado**, **Tipo de Recebimento** e **Data de Recebimento**. Datas em `DD/MM/AAAA`.
+
+    O questionário eclesiástico não entra no CSV. Colunas **Idade**, **Status** e **Congregação** de um arquivo exportado são ignoradas. Planilhas antigas ainda podem ter Nacionalidade, CPF/Documento e Data de Batismo.
   </Accordion>
 
   <Accordion title="Meus dados estão seguros?">
@@ -80,14 +84,14 @@ Aqui você encontra as respostas para as perguntas mais comuns dos administrador
   </Accordion>
 
   <Accordion title="Como exporto meus dados?">
-    O Flock suporta exportação em PDF em várias áreas do sistema:
+    O Flock exporta em **PDF** na maior parte das telas. **CSV** existe só para a **lista de membros**.
 
-    - **Cadastro individual de membro** — abra a página do membro e use a opção de exportação para baixar um PDF com o perfil completo.
-    - **Lista de membros** — na seção Membros, aplique os filtros desejados e exporte a lista filtrada em PDF. Você escolhe quais campos incluir.
-    - **Cadastro de integrante** — semelhante à exportação de membro, disponível na página do integrante.
-    - **Painel / Relatórios** — exportação completa em PDF do painel, com gráficos e estatísticas.
+    - **Cadastro individual de membro** — abra o membro e baixe o PDF do perfil.
+    - **Lista de membros (PDF ou CSV)** — na seção Membros, filtre se quiser e escolha as colunas (incluindo se cônjuge/pai/mãe é membro). Não há documento, data de batismo nem o questionário eclesiástico no CSV.
+    - **Cadastro de integrante** — PDF na página do integrante.
+    - **Grupos, congregações, painel e calendário** — PDF.
 
-    Todos os PDFs exportados incluem o nome da sua igreja no cabeçalho.
+    **Leitor** (e papéis acima) pode exportar. Os PDFs incluem o nome da sua igreja no cabeçalho. Veja o guia [Exportar dados](/guides/exporting-data).
   </Accordion>
 
   <Accordion title="Como cancelo minha assinatura?">

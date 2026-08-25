@@ -74,18 +74,20 @@ A maioria dos problemas no Flock tem uma solução direta. Esta página cobre as
   <Accordion title="A importação por CSV falhou">
     Se sua importação CSV não foi concluída com sucesso, a validação do Flock aponta as linhas e colunas com erro. Causas comuns:
 
-    - **Campo obrigatório ausente** — o campo `nome` é obrigatório em toda linha. Qualquer linha sem nome falha na validação.
-    - **Formato de data inválido** — datas (nascimento, batismo, recebimento) precisam estar no formato `DD/MM/AAAA`. Datas em outros formatos (ex.: `2024-01-15` ou `01/15/2024`) são rejeitadas.
-    - **Membros duplicados** — se uma linha coincide com um membro já no sistema (por nome ou outros campos identificadores), ela é apontada como possível duplicidade.
-    - **Valores inválidos** — campos com opções fixas (como gênero ou estado civil) precisam usar os valores aceitos. Consulte o modelo de importação para as opções corretas.
+    - **Campo obrigatório ausente** — Nome, Data de Nascimento, Gênero, Estado Civil, Endereço, Cidade, Estado, Tipo de Recebimento e Data de Recebimento são obrigatórios em cada linha.
+    - **Formato de data inválido** — datas (nascimento, recebimento e, se houver, batismo legado) precisam estar no formato `DD/MM/AAAA`. Datas em outros formatos (ex.: `2024-01-15` ou `01/15/2024`) são rejeitadas.
+    - **Congregação não selecionada** — a congregação vem do diálogo de importação, não de uma coluna do arquivo.
+    - **Membros duplicados** — se uma linha coincide com um membro já no sistema (em geral pelo nome), ela pode ser pulada ou apontada, conforme a opção de duplicatas.
+    - **Valores inválidos** — campos com opções fixas (como gênero ou estado civil) precisam usar os valores aceitos. Consulte o modelo de importação.
 
     **Para corrigir:**
 
-    1. Revise o relatório de validação do Flock — ele lista cada erro com o número da linha e o campo.
-    2. Abra o CSV, corrija as linhas apontadas e salve.
-    3. Reenvie o arquivo corrigido e valide novamente antes de confirmar a importação.
+    1. Baixe o **modelo CSV** no diálogo de importação se as colunas estiverem desatualizadas.
+    2. Revise o relatório de validação — ele lista cada erro com o número da linha e o campo.
+    3. Abra o CSV, corrija as linhas apontadas e salve.
+    4. Reenvie o arquivo e valide novamente antes de confirmar.
 
-    Se não tiver o modelo, você pode testar a validação em um arquivo pequeno primeiro para confirmar o formato esperado.
+    Colunas **Idade**, **Status** e **Congregação** de um CSV exportado são ignoradas de propósito. Nacionalidade, CPF/Documento e Data de Batismo no final do modelo são só para planilhas antigas.
   </Accordion>
 
   <Accordion title="O painel ou os relatórios mostram gráficos vazios">
