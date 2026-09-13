@@ -4,11 +4,11 @@ sidebarTitle: "Public Links"
 description: "Generate shareable registration and integration links that allow visitors to submit their information without logging in to Flock."
 ---
 
-O Flock oferece dois tipos de formulários públicos que qualquer pessoa pode preencher sem uma conta no Flock. Cada formulário está vinculado a uma URL segura baseada em token, que você gera dentro do aplicativo e compartilha com sua comunidade. As submissões fluem diretamente para o módulo correspondente — sem entrada manual do seu lado. É uma das formas mais rápidas de crescer sua base de membros e o funil de integração ao mesmo tempo.
+O Flock oferece formulários públicos que qualquer pessoa pode preencher sem uma conta no Flock. Cada formulário está vinculado a uma URL segura baseada em token, que você gera dentro do aplicativo e compartilha com sua comunidade. As submissões fluem diretamente para o módulo correspondente — sem entrada manual do seu lado.
 
 ---
 
-## Os dois tipos de formulário público
+## Tipos de formulário público
 
 <CardGroup cols={2}>
   <Card title="Link público de cadastro" icon="user-plus">
@@ -17,6 +17,10 @@ O Flock oferece dois tipos de formulários públicos que qualquer pessoa pode pr
 
   <Card title="Link público de integração" icon="arrow-right-to-bracket">
     Permite que um visitante preencha seus dados e entre no **funil de Integração** como novo integrante, pronto para sua equipe acompanhar e mentorear.
+  </Card>
+
+  <Card title="Link público de Ensino" icon="graduation-cap">
+    Permite inscrição em uma **turma** (EBD, curso, treinamento). Não cria membro automaticamente no rol — pode vincular, ir para fila ou ficar como convidado.
   </Card>
 </CardGroup>
 
@@ -62,6 +66,22 @@ O link público de integração funciona da mesma forma que o de cadastro, mas a
 <Tip>
   O formulário público de integração (`/public/integration/...`) também funciona bem no celular do visitante: role a página, preencha e toque em **Enviar Cadastro**. Imprima o link como **QR code** em cartões de visitante ou na entrada da igreja.
 </Tip>
+
+---
+
+## Link público de Ensino
+
+O link de Ensino é **por turma** (não por programa). Gere ou ative no detalhe da turma em **Ensino**, com a turma **Aberta** ou **Em andamento**.
+
+**Como funciona:**
+
+- URL no formato `.../public/teaching/<token>`.
+- O visitante informa nome completo, WhatsApp e data de nascimento (e-mail opcional).
+- O sistema pode vincular automaticamente a um membro, enviar para a fila de **possível membro** ou registrar como **convidado**.
+- Convidados **não** contam no limite de membros do plano.
+- A tela pública só mostra **Inscrição confirmada** ou **Inscrição enviada** — sem revelar detalhes do match.
+
+Veja o passo a passo em [Gerenciar Ensino](/guides/managing-teaching) e a visão do módulo em [Ensino](/features/teaching).
 
 ---
 
