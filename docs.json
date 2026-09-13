@@ -29,6 +29,7 @@
               "features/congregations",
               "features/groups",
               "features/calendar",
+              "features/teaching",
               "features/reports"
             ]
           },
@@ -37,6 +38,7 @@
             "pages": [
               "guides/adding-members",
               "guides/managing-integration",
+              "guides/managing-teaching",
               "guides/public-links",
               "guides/exporting-data"
             ]
