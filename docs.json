@@ -29,6 +29,7 @@
               "features/congregations",
               "features/groups",
               "features/calendar",
+              "features/teaching",
               "features/reports"
             ]
           },
