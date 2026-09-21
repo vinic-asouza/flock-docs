@@ -1,107 +1,42 @@
 ---
-title: "Calendário: agende e acompanhe todos os eventos da sua igreja"
+title: "Calendário: agenda da igreja (indisponível no lançamento)"
 sidebarTitle: "Calendário"
-description: "Crie e gerencie eventos da igreja, atribua participantes, exporte a agenda em PDF (mês ou ano, com recorte no confirmar) e use o calendário no celular."
+description: "O módulo Calendário não está disponível no Painel no lançamento do MVP. A agenda será repensada em uma evolução futura do produto."
+hidden: true
 ---
 
-O módulo Calendário é onde você agenda e acompanha tudo o que acontece na sua igreja — cultos de domingo, reuniões, retiros de liderança, cultos de batismo, eventos evangelísticos e mais. Eventos podem ser vinculados a uma congregação ou ministério específico, atribuídos a um membro responsável e preenchidos com participantes puxados da sua lista de membros. O resultado é um registro de atividades de toda a igreja que mantém sua equipe de liderança alinhada.
-
-<Tip>
-  No celular, use o menu ☰ → **Calendário**. Na visão mensal, os dias mostram pontos coloridos; toque no dia para ver os itens ou criar um novo. Os botões **Salvar**, **Editar** e **Excluir** ficam fixos na base do painel ao criar ou abrir um item.
-</Tip>
-
-## Criando um evento
-
-<Steps>
-  <Step title="Abra o módulo Calendário">
-    No computador, clique em **Calendário** na barra lateral. No celular, toque no menu ☰ e escolha **Calendário**.
-  </Step>
-  <Step title="Inicie um novo item">
-    Clique em **Novo Item** (no celular o rótulo pode aparecer só como **Novo**). Na visão mensal, toque em um dia vazio ou no **\+** do dia para preencher a data automaticamente; se o dia já tiver itens, o celular abre a lista do dia — use **Novo item** nesse painel.
-  </Step>
-  <Step title="Preencha os dados principais">
-    Informe o **título** do evento (obrigatório) e selecione o **tipo** no dropdown. Defina a **data** e, se aplicável, o **horário**.
-  </Step>
-  <Step title="Defina o escopo (opcional)">
-    Vincule o evento a uma **congregação** e/ou **ministério** para indicar onde e para quem ele acontece. Deixe em branco para eventos da igreja inteira.
-  </Step>
-  <Step title="Atribua um responsável (opcional)">
-    Selecione o membro que organiza ou lidera o evento. O nome dele aparece no detalhe do evento.
-  </Step>
-  <Step title="Configure recorrência (opcional)">
-    Se for uma atividade recorrente — um culto semanal, uma reunião mensal de oração ou um retiro anual — ative a opção **Recorrente** e defina o padrão (semanal, mensal, etc.).
-  </Step>
-  <Step title="Salvar">
-    Clique em **Salvar**. O evento aparece imediatamente no calendário.
-  </Step>
-</Steps>
-
-## Eventos recorrentes
-
-Eventos recorrentes permitem criar toda uma série de atividades a partir de um único formulário — útil para cultos regulares, reuniões semanais de ministério ou encontros mensais de liderança.
-
 <Warning>
-  Ao **editar um evento recorrente**, a alteração pode se aplicar à **série inteira** — todas as ocorrências passadas e futuras — dependendo da opção de edição escolhida. Revise o diálogo de confirmação com atenção antes de salvar. Se quiser alterar só uma ocorrência, selecione a opção "apenas este evento" quando for perguntado.
+  **Indisponível no Painel neste momento.** O item **Calendário** não aparece no menu, a rota `/calendar` redireciona ao Painel e os tutoriais in-app não orientam o uso da agenda.
 </Warning>
 
-De forma semelhante, excluir um evento recorrente pergunta se você deseja remover apenas a ocorrência selecionada ou a série inteira.
-
-## Participantes
-
-Você pode anexar uma lista de participantes a qualquer evento, puxando diretamente dos registros de membros:
-
-- **Adicionar individualmente** — abra o evento, vá até a seção de participantes e busque o membro por nome.
-- **Adicionar em lote** — use o recurso de participantes em lote para adicionar vários membros de uma vez, filtrando por congregação ou ministério para selecionar rapidamente um subconjunto relevante.
-- **Remover um participante** — clique no ícone de remoção ao lado do nome no detalhe do evento.
-
-Listas de participantes fornecem um registro de quem esteve ou era esperado em cada evento, útil para acompanhar engajamento e follow-up.
-
-## Visualizações do calendário
-
-O módulo Calendário oferece visualizações complementares:
-
-<CardGroup cols={2}>
-  <Card title="Calendário mensal" icon="calendar" href="#">
-    Grade mensal com os eventos nas datas. No computador, os títulos aparecem nos dias; no celular, cada dia mostra pontos coloridos e a quantidade de itens — toque no dia para abrir a lista. Navegue entre meses com as setas.
-  </Card>
-
-  <Card title="Lista / agenda" icon="list" href="#">
-    Lista cronológica dos eventos do período. Ideal para revisar atividades futuras ou passadas e filtrar por tipo, congregação ou ministério.
-  </Card>
-</CardGroup>
-
-Alterne entre **Calendário** e **Listas** pelas abas no topo do módulo. No celular, filtros e navegação ficam mais compactos; os filtros abrem em um painel lateral.
-
-## Exportar PDF
-
-Qualquer usuário com permissão de **Leitor** ou superior pode baixar a agenda em PDF. O arquivo é gerado no servidor e inclui os eventos ativos do período escolhido.
-
-- **Mês:** botão de PDF ao lado das setas na aba **Calendário**, e no cabeçalho de cada mês na aba **Listas** (mesmo quando o mês tem poucos itens).
-- **Ano:** botão **Exportar PDF** no topo da página, nas duas abas (no celular o rótulo pode aparecer só como **PDF**).
-
-Ao clicar, abre um painel para escolher o recorte deste arquivo: **tipos** de evento (nenhum marcado inclui todos), **congregação** e **ministério**. Esse recorte vale **somente para aquele PDF** — os filtros da listagem não mudam. Os campos já vêm preenchidos com o que estava na tela no momento do clique. O download começa só depois de **Baixar PDF**.
-
-Se não houver itens no período e recorte, o PDF baixa mesmo assim e informa que não há itens.
-
-<Tip>
-  Passo a passo completo: [Como exportar dados](/guides/exporting-data).
-</Tip>
-
-## Contador de aniversariantes
-
-No topo do calendário, o Flock exibe um **contador de aniversariantes** mostrando quantos membros fazem aniversário no mês atual. Clique no contador para abrir a lista completa com nome e contato de cada pessoa, para que você possa entrar em contato e comemorar.
+O Flock terá uma experiência de agenda renovada em uma próxima etapa do produto (alinhada ao módulo de Eventos). Enquanto isso, foque em **Membros**, **Integração**, **Congregações**, **Ministérios** e **Relatórios**.
 
 <Note>
-  Os dados de aniversário vêm da data de nascimento informada no perfil de cada membro. Certifique-se de preencher a data de nascimento no cadastro para manter esta lista precisa.
+  O contador de aniversariantes que existia no hub do Calendário também está temporariamente indisponível. Em breve deve migrar para o módulo **Membros**.
 </Note>
 
-## Filtrando eventos
+## O que continua disponível
 
-Use a barra de filtros para focar em eventos específicos:
+- Gestão de membros, integração, estrutura (congregações e ministérios) e painel de análises
+- Exportações PDF/CSV dos módulos ativos — veja [Como exportar dados](/guides/exporting-data)
+- Tutoriais in-app em **Tutoriais** (sem guias de calendário)
 
-- **Congregação** — mostra apenas eventos de um local
-- **Ministério** — mostra apenas eventos associados a um ministério
-- **Intervalo de datas** — define uma janela personalizada de/até
-- **Tipo de evento** — filtra por categoria
+## Próximos passos sugeridos
 
-Todos os filtros podem ser combinados, e os ativos aparecem como chips que podem ser removidos individualmente.
+<CardGroup cols={2}>
+  <Card title="Membros" icon="users" href="/features/members">
+    Cadastro e rol da igreja
+  </Card>
+
+  <Card title="Integração" icon="arrow-right-to-bracket" href="/features/integration">
+    Funil de visitantes até a membresia
+  </Card>
+
+  <Card title="Ministérios" icon="people-group" href="/features/groups">
+    Áreas de serviço da igreja
+  </Card>
+
+  <Card title="Relatórios" icon="chart-bar" href="/features/reports">
+    Painel e análises
+  </Card>
+</CardGroup>
