@@ -1,12 +1,12 @@
 ---
-title: "Ensino: programas, turmas, aulas, chamada, materiais e certificados"
+title: "Ensino: programas, turmas, aulas, chamada, frequência, materiais e certificados"
 sidebarTitle: "Ensino"
-description: "Organize ciclos formativos (EBD, cursos e estudos): crie programas e turmas, gerencie inscritos, monte o cronograma, registre a chamada, guarde materiais e emita certificados em PDF ao encerrar a turma."
+description: "Organize ciclos formativos (EBD, cursos e estudos): crie programas e turmas, gerencie inscritos, monte o cronograma, registre a chamada, acompanhe a frequência, guarde materiais e emita certificados em PDF ao encerrar a turma."
 ---
 
-O módulo **Ensino** é o lugar do Painel para ciclos formativos da igreja — EBD, cursos, estudos e treinamentos. Você organiza **Programas**, abre **Turmas** por congregação, controla **inscritos** (membros, convidados e possível membro), monta o cronograma e a **chamada** na aba **Aulas**, guarda **links e anotações** na aba **Materiais** e, ao **encerrar** a turma, emite **certificados** em PDF na aba **Certificados**.
+O módulo **Ensino** é o lugar do Painel para ciclos formativos da igreja — EBD, cursos, estudos e treinamentos. Você organiza **Programas**, abre **Turmas** por congregação, controla **inscritos** (membros, convidados e possível membro), monta o cronograma e a **chamada** na aba **Aulas**, acompanha a **frequência** na aba **Estatísticas**, guarda **links e anotações** na aba **Materiais** e, ao **encerrar** a turma, emite **certificados** em PDF na aba **Certificados**.
 
-**Dica:** no celular, use o menu ☰ → **Ensino**. No detalhe da turma, as abas (Inscritos, Aulas, Materiais, Certificados) deslizam horizontalmente se não couberem na tela.
+**Dica:** no celular, use o menu ☰ → **Ensino**. No detalhe da turma, as abas (Inscritos, Aulas, Estatísticas, Materiais, Certificados) deslizam horizontalmente se não couberem na tela.
 
 **Importante:** o calendário de aulas do Ensino é **próprio da turma**. Ele é independente da agenda geral da igreja.
 
@@ -19,7 +19,13 @@ O módulo **Ensino** é o lugar do Painel para ciclos formativos da igreja — E
 No detalhe da turma você encontra:
 
 - Coluna lateral: **Sobre**, **Equipe** e **Link** público de inscrição
-- Abas: **Inscritos**, **Aulas**, **Materiais** e **Certificados**
+- Abas: **Inscritos**, **Aulas**, **Estatísticas**, **Materiais** e **Certificados**
+
+## Status da turma
+
+No cabeçalho do detalhe, quem edita troca o status da turma (Rascunho, Aberta, Em andamento, Encerrada, Arquivada). Quem só consulta vê o status, sem menu.
+
+O Flock pede confirmação ao **encerrar**, **arquivar** ou **sair de Encerrada**. Escolher o status que já está ativo não grava nada. Na lista de turmas do programa, o status continua só como etiqueta.
 
 ## Cronograma na aba Aulas
 
@@ -64,7 +70,7 @@ Cada inscrito elegível pode ficar em um destes estados:
 | **Presente** | Compareceu |
 | **Ausente** | Não compareceu |
 
-1. Use o seletor ao lado de cada nome. A lista é paginada e tem busca por nome.
+1. Toque em **Presente** ou **Ausente**. Tocar de novo no botão que já está ativo volta o inscrito para **Não registrada**.
 2. Opcional: **Marcar todos presentes** promove quem ainda está como **Não registrada**. Se houver ausentes e você quiser sobrescrevê-los, o Flock pede confirmação explícita.
 3. Clique em **Salvar chamada**. Se houver alterações sem salvar e você tentar trocar de aula, página ou aba, o Flock avisa para não perder o trabalho.
 
@@ -79,6 +85,14 @@ Cada inscrito elegível pode ficar em um destes estados:
 Na aba **Inscritos** você adiciona membros do rol, cadastra convidados (não consomem cota do plano) e trata a fila de **possível membro**.
 
 O **link público** da turma (coluna lateral) permite inscrição sem login. O visitante envia o formulário e o Flock confirma o vínculo automaticamente ou envia para a fila/convidado — sem revelar detalhes do match.
+
+## Frequência na aba Estatísticas
+
+A aba **Estatísticas** resume a presença **desta turma**. Ela não compara outras turmas.
+
+A taxa conta só **Presente** e **Ausente**. **Não registrada** aparece à parte e não entra na conta. Se ninguém foi marcado presente nem ausente, o Flock mostra que não há presenças registradas.
+
+A lista de inscritos começa por quem tem a menor frequência. Possível membro não entra nessa lista. Quem saiu da turma deixa de aparecer nela, mas o histórico dos dias em que ainda era elegível permanece nos totais das aulas.
 
 ## Materiais da turma
 
@@ -102,7 +116,7 @@ Na aba **Certificados** você gera um PDF multipágina (uma página por aluno) d
 1. Abra a turma e a aba **Certificados**.
 2. Se a turma ainda não estiver Encerrada, o Flock mostra um aviso — encerre a turma antes de emitir.
 3. Em **Configuração desta emissão**, envie o **logo da Igreja** (obrigatório, PNG ou JPEG até 2 MB), opcionalmente até **2 logos adicionais**, e escolha as cores primária e secundária.
-4. Selecione os alunos elegíveis (**Membro** e **Convidado**). **Possível membro** aparece como pendência e só vira elegível depois de resolvido em **Inscritos**. Limite: até **50** alunos por geração.
+4. Selecione os alunos elegíveis (**Membro** e **Convidado**). A lista mostra a **frequência** de cada um. **Possível membro** aparece como pendência e só vira elegível depois de resolvido em **Inscritos**. Limite: até **50** alunos por geração.
 5. Clique em **Gerar certificados**. Ao terminar, baixe o PDF.
 
 <Note>
@@ -113,5 +127,5 @@ Na aba **Certificados** você gera um PDF multipágina (uma página por aluno) d
 
 | Papel | O que pode fazer no Ensino |
 | --- | --- |
-| **Leitor** | Ver programas, turmas, cronograma, chamada, materiais e a aba Certificados (sem gerar) |
-| **Editor** (ou superior) | Criar/editar/excluir aulas e séries, salvar chamada, gerenciar inscritos, o link público e **materiais**; **gerar certificados** |
+| **Leitor** | Ver programas, turmas, cronograma, chamada, estatísticas, materiais e a aba Certificados (sem gerar) |
+| **Editor** (ou superior) | Trocar o status da turma, criar/editar/excluir aulas e séries, salvar chamada, gerenciar inscritos, o link público e **materiais**; **gerar certificados** |
