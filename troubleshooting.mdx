@@ -10,22 +10,20 @@ A maioria dos problemas no Flock tem uma solução direta. Esta página cobre as
   <Accordion title="Não consigo fazer login">
     Se você não está conseguindo entrar na sua conta do Flock, tente estes passos na ordem:
 
-    1. **Verifique se seu e-mail foi confirmado.** O Flock exige confirmação do e-mail antes do primeiro login. Se você se cadastrou há pouco e ainda não confirmou, olhe a caixa de entrada (e o spam) pela mensagem de confirmação do Flock. Se não achar, use a opção **Reenviar confirmação** — veja a seção abaixo.
-    2. **Tente redefinir sua senha.** Clique em **Esqueci minha senha** na tela de login e siga as instruções do e-mail de redefinição. Certifique-se de que a nova senha atende aos requisitos: pelo menos 8 caracteres, com maiúsculas, minúsculas e números.
+    1. **Se a mensagem falar em e-mail não confirmado**, olhe a caixa de entrada (e o spam) por um link de confirmação do Auth. O cadastro em si segue para a escolha de plano quando o login automático funciona; essa mensagem só aparece quando o Auth recusa a sessão. Se o link existir, use-o; depois tente o login de novo.
+    2. **Tente redefinir sua senha.** Clique em **Esqueceu sua senha?** na tela de login e siga as instruções do e-mail de redefinição. Certifique-se de que a nova senha atende aos requisitos: pelo menos 8 caracteres, com maiúsculas, minúsculas e números.
     3. **Verifique o Caps Lock.** Senhas diferenciam maiúsculas de minúsculas. Confirme que o Caps Lock não está ligado por acidente.
     4. **Limpe os cookies do navegador.** Cookies de sessão desatualizados ou corrompidos podem bloquear o fluxo de login. Limpe os cookies do domínio do Flock (ou tente abrir o Flock em uma janela anônima) e tente novamente.
     5. **Tente outro navegador.** Se o problema persistir, teste em outro navegador para descartar um problema específico do seu.
   </Accordion>
 
-  <Accordion title="Não recebi o e-mail de confirmação">
-    Se você se cadastrou no Flock, mas o e-mail de confirmação não chegou:
+  <Accordion title="O login diz que o e-mail não está confirmado">
+    Depois do cadastro, o caminho normal é a **escolha de plano**, sem uma tela pedindo confirmação. Se o login (ou o login automático) responder que o e-mail não está confirmado:
 
-    1. **Verifique a pasta de spam ou lixo eletrônico.** E-mails de confirmação às vezes são filtrados pelos provedores. Procure por uma mensagem do Flock no spam.
-    2. **Confira o e-mail cadastrado.** Verifique se não há erros de digitação. Se cadastrou com o e-mail errado, será necessário fazer novo cadastro com o correto.
-    3. **Use a opção Reenviar confirmação.** Depois de logado (ou pela página pós-cadastro), vá em **Configurações → Conta** e procure a opção **Reenviar confirmação**. Isso envia um novo link para o seu e-mail.
-    4. **Aguarde alguns minutos.** Ocasionalmente, a entrega de e-mails atrasa por causa das filas dos servidores de e-mail.
-
-    Se nada funcionar, entre em contato com o suporte informando o e-mail usado no cadastro.
+    1. **Verifique a pasta de spam ou lixo eletrônico** por um link de confirmação do Auth.
+    2. **Confira o e-mail cadastrado** — erro de digitação exige novo cadastro com o endereço correto.
+    3. Se o link existir, confirme e tente **Entrar** de novo em `/login`.
+    4. Se não houver e-mail e o erro continuar, fale com o suporte informando o endereço usado no cadastro.
   </Accordion>
 
   <Accordion title="Ao editar um membro, clicar em Salvar parece não fazer nada">
