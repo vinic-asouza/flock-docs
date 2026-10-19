@@ -25,13 +25,16 @@ Todos os planos pagos incluem todos os recursos do Flock. A única diferença en
 
 Ao abrir **Configurações → Plano**, você vê um cartão-resumo com:
 
-- Nome e preço do seu **plano atual**
+- Nome e preço do seu **plano atual** (em assinaturas ativas)
+- Uso do limite no formato **"X de N membros ativos"** (também no **Painel** `/`)
 - **Status** da assinatura (Ativa, Cancelada, Em atraso, etc.)
 - **Data de início** da assinatura
 - Alterações futuras (por exemplo, uma data de término agendada se você cancelou)
 
+Abaixo de 80% do limite, só o indicador aparece. A partir de 80%, um aviso com o botão **Atualizar plano** (Proprietário/Administrador). No limite (100%), a mensagem explica que novas inclusões ficam bloqueadas até liberar vagas ou fazer upgrade.
+
 <Note>
-  No **plano Grátis**, a aba mostra o estado vazio — por exemplo "Nenhuma Assinatura Ativa" e o limite de 100 membros — com um único botão **Assinar Plano**. **Sincronizar Assinatura** e **Gerenciar Assinatura** (portal Stripe) **não** aparecem enquanto a conta estiver no plano Grátis, mesmo que você tenha iniciado um checkout antes e voltado. Isso **não** é um erro.
+  No **plano Grátis**, a aba mostra o estado vazio — por exemplo "Nenhuma Assinatura Ativa" e o limite de 100 membros — com o indicador **"X de N membros ativos"** e o botão **Assinar Plano**. **Sincronizar Assinatura** e **Gerenciar Assinatura** (portal Stripe) **não** aparecem enquanto a conta estiver no plano Grátis, mesmo que você tenha iniciado um checkout antes e voltado. Isso **não** é um erro.
 </Note>
 
 ## Fazendo upgrade do plano
@@ -91,9 +94,10 @@ Para abrir o portal:
 
 O Flock monitora a contagem de membros ativos contra o limite do seu plano o tempo todo.
 
-- Ao se aproximar do limite, você vê um **aviso** na lista de membros e no painel.
-- Ao atingir o limite, **adicionar novos membros fica bloqueado**. A ação "adicionar membro" mostra um erro explicando que você atingiu o limite do plano.
-- Para continuar adicionando membros, vá em **Configurações → Plano** e faça upgrade para um plano maior.
+- O uso **"X de N membros ativos"** aparece no **Painel** e em **Configurações → Plano**.
+- A partir de **80%**, o Painel/Plano mostram um aviso com **Atualizar plano**; o cabeçalho (desktop) também alerta.
+- Ao atingir o limite, **adicionar novos membros fica bloqueado** (cadastro, importação, conversão da integração e links públicos). A ação "adicionar membro" mostra um erro explicando que você atingiu o limite do plano.
+- Para continuar adicionando membros, vá em **Configurações → Plano** e faça upgrade para um plano maior, ou liberar vagas inativando membros.
 
 <Note>
   Só **membros ativos** contam para o limite do plano. Membros inativos e integrantes (pessoas no processo de integração/onboarding) não afetam a contagem.
