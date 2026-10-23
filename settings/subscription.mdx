@@ -53,7 +53,7 @@ Abaixo de 80% do limite, só o indicador aparece. A partir de 80%, um aviso com 
     Revise a tela de confirmação mostrando seu plano atual e o novo plano, e clique em **Confirmar Troca**. No celular, esse botão fica fixo na base do painel.
   </Step>
   <Step title="A mudança tem efeito imediato">
-    O novo limite de membros é ativado na hora. O Stripe calcula uma cobrança proporcional pelos dias restantes do período de cobrança atual e a aplica na próxima fatura.
+    O novo limite de membros é ativado na hora. O Stripe cobra na hora a diferença proporcional do período. Se o banco pedir confirmação, a aba **Plano** mostra **Confirmar pagamento**, que abre a fatura do Stripe em outra guia. Enquanto o pagamento estiver pendente, **Trocar de Plano** fica desabilitado.
   </Step>
 </Steps>
 
@@ -108,12 +108,20 @@ O Flock monitora a contagem de membros ativos contra o limite do seu plano o tem
 Para cancelar, abra o **Portal de Cobrança do Stripe** (via **Gerenciar Assinatura**) e cancele por lá.
 
 - Depois de cancelar, você mantém acesso completo ao plano pago até o **fim do período de cobrança atual**.
+- A aba **Plano** passa a mostrar **Assinatura Cancelada** e o histórico da assinatura registra **Cancelamento agendado** na hora. O mesmo fato aparece na aba **Histórico**.
+- Renovar a assinatura no portal registra **Assinatura renovada** no histórico da aba **Plano** e na aba **Histórico**. Cada cancelamento e cada renovação geram o próprio registro.
+- A troca de plano também aparece na aba **Histórico**.
+- Quando um pagamento em atraso é confirmado, o histórico da aba **Plano** mostra **Pagamento confirmado** com data e hora, do mais recente para o mais antigo. A aba **Histórico** mostra que o dono confirmou o pagamento da igreja.
+- Se a assinatura já foi sincronizada há pouco, **Sincronizar Assinatura** confirma que ela já está atualizada.
 - Ao final do período, sua conta volta automaticamente para o **plano Grátis** (limite de 100 membros).
 - Se você tiver mais de 100 membros ativos quando o downgrade ocorrer, não conseguirá adicionar novos membros até reduzir a contagem para menos de 100.
 
 ## Problemas de pagamento
 
-Se o pagamento falhar, sua assinatura entra no estado **Em atraso**. Você verá um alerta em destaque na página **Plano** pedindo para atualizar o método de pagamento. Novos membros não podem ser adicionados enquanto o pagamento estiver atrasado. Clique em **Atualizar pagamento** no alerta para abrir o portal do Stripe e resolver.
+Se o pagamento falhar ou a diferença do upgrade precisar de autenticação, a assinatura entra em **Em atraso**. Novos membros não podem ser adicionados até a regularização.
+
+- **Confirmar pagamento** abre a fatura em aberto no Stripe (use quando o banco pedir a confirmação da cobrança).
+- **Atualizar pagamento** abre o portal para trocar o cartão.
 
 <Note>
   Apenas o **Proprietário** ou um **Administrador** da conta podem ver ou gerenciar cobrança, assinatura e configurações de pagamento. Usuários **Editores** e **Leitores** não veem a aba **Plano** em Configurações.
